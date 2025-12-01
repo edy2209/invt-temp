@@ -510,6 +510,7 @@ function WhenWhereSection() {
       </div>
 
       {/* Cards Container */}
+      {/* testing */}
       <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center md:items-start px-4">
         {/* Holy Matrimony Card */}
         <article className="w-full max-w-[382px] h-auto min-h-[654px] bg-white rounded-[10px] border border-solid border-[#544523] shadow-[0px_4px_5px_#00000040] flex flex-col items-center gap-1.5 relative">
