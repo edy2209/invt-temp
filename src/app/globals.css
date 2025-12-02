@@ -38,6 +38,15 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+body {
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 /* Custom animations */
@@ -75,23 +84,23 @@ html {
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* Custom scrollbar */
+/* Hide scrollbar completely */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
+  height: 0px;
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 3px;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f43f5e;
-  border-radius: 3px;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e11d48;
+  display: none;
 }
 
 /* Focus styles */
