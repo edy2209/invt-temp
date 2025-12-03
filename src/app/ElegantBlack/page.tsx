@@ -228,7 +228,7 @@ function OurLoveJourneySection() {
           </div>
 
           <p className="absolute top-[130px] md:top-[130px] lg:top-[150px] left-4 md:left-8 lg:left-[53px] w-[calc(100%-2rem)] md:w-[300px] lg:w-[377px] font-times font-normal text-black text-base md:text-lg lg:text-xl tracking-[-0.32px] lg:tracking-[-0.40px] leading-[normal]">
-            We first met at a magical coffee shop where Alex accidentally spilled coffee on Isabella's fairy tale book. Love at first sight (and spill)! ☕💕
+            We first met at a magical coffee shop where Alex accidentally spilled coffee on Isabella&apos;s fairy tale book. Love at first sight (and spill)! ☕💕
           </p>
         </div>
 
