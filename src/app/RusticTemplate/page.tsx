@@ -44,23 +44,14 @@ export default function RusticTemplate() {
         />
       </div>
 
-      {/* Scroll Button */}
-      <button
-        className="absolute left-1/2 -translate-x-1/2 bottom-[9377px] w-[21px] h-9 flex justify-center rounded-[10.5px] border border-solid border-white bg-transparent cursor-pointer hover:bg-white/10 transition-colors z-50"
-        onClick={handleScrollDown}
-        aria-label="Scroll down to view more content"
-      >
-        <div className="mt-[7px] w-[3px] h-3.5 bg-white rounded-[505px] border border-solid" />
-      </button>
-
       {/* Header Section */}
       <header className="absolute top-[490px] md:top-[470px] left-1/2 -translate-x-1/2 w-full max-w-[320px] md:max-w-[450px] h-[94px] md:h-[85px] flex justify-center bg-white rounded-[50px] border border-solid border-[#4b3d1a] shadow-[0px_5px_10px_#00000040] px-4 z-10">
         <div className="flex w-full h-full relative flex-col items-center justify-center gap-1.5 md:gap-2.5 p-2.5">
-          <h1 className="relative w-fit mt-[-1.00px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          <h1 className="relative w-fit mt-[-1.00px] font-times font-normal text-[#544523] text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
             Dear Beloved Guest,
           </h1>
 
-          <p className="relative w-full max-w-[280px] md:max-w-[440px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-sm md:text-base text-center tracking-[-0.32px] leading-[normal]">
+          <p className="relative w-full max-w-[280px] md:max-w-[440px] font-times font-normal text-[#9a8960] text-sm md:text-base text-center tracking-[-0.32px] leading-[normal]">
             We cordially invite you to celebrate our timeless<br className="hidden md:block" /> love story
           </p>
         </div>
@@ -72,7 +63,7 @@ export default function RusticTemplate() {
         onClick={handleOpenInvitation}
         aria-label="Open wedding invitation"
       >
-        <span className="relative w-fit [font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+        <span className="relative w-fit font-times font-bold text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
           Open Invitation
         </span>
       </button>
@@ -89,7 +80,7 @@ export default function RusticTemplate() {
         className="flex flex-col w-full max-w-[382px] h-[187px] items-center justify-center px-2.5 py-0 absolute top-[320px] md:top-[260px] left-1/2 -translate-x-1/2 rounded-[10px] z-10"
         aria-label="Couple names"
       >
-        <h2 className="w-fit mt-[-18.50px] [font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-white text-4xl md:text-[52px] text-center tracking-[-1.28px] whitespace-nowrap relative leading-[normal]">
+        <h2 className="w-fit mt-[-18.50px] font-times font-bold text-white text-4xl md:text-[52px] text-center tracking-[-1.28px] whitespace-nowrap relative leading-[normal]">
           Alexander
         </h2>
 
@@ -105,7 +96,7 @@ export default function RusticTemplate() {
             />
           </div>
 
-          <div className="w-fit mt-[-1.00px] [font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-white text-4xl md:text-[52px] tracking-[-1.28px] whitespace-nowrap relative text-center leading-[normal]">
+          <div className="w-fit mt-[-1.00px] font-times font-bold text-white text-4xl md:text-[52px] tracking-[-1.28px] whitespace-nowrap relative text-center leading-[normal]">
             &amp;
           </div>
 
@@ -118,7 +109,7 @@ export default function RusticTemplate() {
           </div>
         </div>
 
-        <h2 className="w-fit mb-[-16.50px] [font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-white text-4xl md:text-[52px] text-center tracking-[-1.28px] whitespace-nowrap relative leading-[normal]">
+        <h2 className="w-fit mb-[-16.50px] font-times font-bold text-white text-4xl md:text-[52px] text-center tracking-[-1.28px] whitespace-nowrap relative leading-[normal]">
           Isabella
         </h2>
       </section>
@@ -172,12 +163,12 @@ function QuotesSection() {
       <header className="w-full max-w-[545px] h-auto min-h-[131px] items-center absolute top-[106px] left-1/2 -translate-x-1/2 flex flex-col gap-2.5 p-2.5">
         <h2
           id="quotes-heading"
-          className="relative w-full max-w-[368px] mt-[-1.00px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-white text-3xl md:text-5xl text-center tracking-[-1.28px] leading-[normal]"
+          className="relative w-full max-w-[368px] mt-[-1.00px] font-times font-normal text-white text-3xl md:text-5xl text-center tracking-[-1.28px] leading-[normal]"
         >
           Words of Love
         </h2>
 
-        <p className="relative w-full max-w-[554px] [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.64px] leading-[normal]">
+        <p className="relative w-full max-w-[554px] font-times font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.64px] leading-[normal]">
           Sacred verses that bless our timeless union
         </p>
       </header>
@@ -194,14 +185,14 @@ function QuotesSection() {
       <article className="absolute top-[376px] left-1/2 -translate-x-1/2 w-full max-w-[744px] h-auto min-h-[221px] flex justify-center bg-white rounded-[10px] border border-solid border-[#4b3d1a] px-4">
         <div className="flex w-full h-auto min-h-[221px] relative flex-col items-center justify-center gap-2.5 px-2.5 py-[30px]">
           <blockquote
-            className="w-full max-w-[640px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-black text-2xl md:text-4xl tracking-[-0.72px] [direction:rtl] relative text-center leading-[normal]"
+            className="w-full max-w-[640px] font-times font-normal text-black text-2xl md:text-4xl tracking-[-0.72px] [direction:rtl] relative text-center leading-[normal]"
             lang="ar"
           >
             ومن ايته ان خلق لكم من انفسكم ازواجا لتسكنوا اليها وجعل بينكم مودة
             ورحمة ان في ذلك لايت لقوم يتفكرون
           </blockquote>
 
-          <p className="relative w-full max-w-[684px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-black text-sm md:text-base text-center tracking-[-0.32px] leading-[normal]">
+          <p className="relative w-full max-w-[684px] font-times font-normal text-black text-sm md:text-base text-center tracking-[-0.32px] leading-[normal]">
             Artinya: &quot;Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia
             menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri
             agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa
@@ -210,7 +201,7 @@ function QuotesSection() {
             berpikir.&quot;
           </p>
 
-          <cite className="relative w-full max-w-[382px] [font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-black text-base text-center tracking-[-0.32px] leading-[normal] not-italic">
+          <cite className="relative w-full max-w-[382px] font-times font-bold text-black text-base text-center tracking-[-0.32px] leading-[normal] not-italic">
             -QS. Ar-Rum: 21
           </cite>
         </div>
@@ -254,11 +245,11 @@ function LoveStorySection() {
   return (
     <section className="relative w-full h-auto min-h-[1600px] md:min-h-[900px] px-4 py-8 md:py-24 bg-gradient-to-b from-[#6b5b53] to-[#7a6d64] -mt-8 md:-mt-16 z-40">
       <header className="w-full max-w-[610px] h-auto min-h-[122px] items-center absolute top-[97px] left-1/2 -translate-x-1/2 flex flex-col gap-2.5 p-2.5">
-        <h2 className="w-full relative mt-[-1.00px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-white text-4xl md:text-[64px] text-center tracking-[-1.28px] leading-[normal]">
+        <h2 className="w-full relative mt-[-1.00px] font-times font-normal text-white text-4xl md:text-[64px] text-center tracking-[-1.28px] leading-[normal]">
           Our Love Story
         </h2>
 
-        <p className="relative w-full [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+        <p className="relative w-full font-times font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
           Two souls destined to become one
         </p>
       </header>
@@ -306,16 +297,16 @@ function PersonCard({
       </div>
 
       <div className="w-full h-auto min-h-[100px] items-center justify-center absolute top-[265px] left-0 flex flex-col gap-2 p-2.5 px-4">
-        <h3 className="relative w-full text-center [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-[#544523] text-xl md:text-[28px] tracking-[-0.64px] leading-[normal]">
+        <h3 className="relative w-full text-center font-times font-normal italic text-[#544523] text-xl md:text-[28px] tracking-[-0.64px] leading-[normal]">
           {name}
         </h3>
 
-        <p className="relative w-full max-w-[306px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-lg md:text-xl text-center tracking-[-0.48px] leading-[normal]">
+        <p className="relative w-full max-w-[306px] font-times font-normal text-[#9a8960] text-lg md:text-xl text-center tracking-[-0.48px] leading-[normal]">
           Putra/Putri dari:
         </p>
 
         <div className="inline-flex flex-col items-center justify-center relative flex-[0_0_auto]">
-          <p className="w-full max-w-[306px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-base md:text-lg text-center tracking-[-0.48px] relative leading-[normal]">
+          <p className="w-full max-w-[306px] font-times font-normal text-[#9a8960] text-base md:text-lg text-center tracking-[-0.48px] relative leading-[normal]">
             {parents}
           </p>
         </div>
@@ -333,7 +324,7 @@ function PersonCard({
           alt="Instagram icon"
           src={socialIcon}
         />
-        <span className="relative w-fit [font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+        <span className="relative w-fit font-times font-bold text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
           {socialHandle}
         </span>
       </a>
@@ -379,33 +370,33 @@ function LoveJourneySection() {
   return (
     <section className="relative w-full h-auto min-h-[908px] px-4 py-8 md:py-24 pb-20 bg-gradient-to-b from-[#7a6d64] to-[#9a9189] -mt-8 md:-mt-4 z-30">
       <header className="w-full max-w-[563px] h-auto min-h-[132px] items-center absolute top-[35px] left-1/2 -translate-x-1/2 flex flex-col gap-2.5 p-2.5">
-        <h2 className="relative w-fit mt-[-1.00px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-white text-4xl md:text-[64px] text-center tracking-[-1.28px] leading-[normal]">
+        <h2 className="relative w-fit mt-[-1.00px] font-times font-normal text-white text-4xl md:text-[64px] text-center tracking-[-1.28px] leading-[normal] md:whitespace-nowrap">
           Our Love Journey
         </h2>
 
-        <p className="relative w-full [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+        <p className="relative w-full font-times font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal] mb-0 md:mb-8">
           Every love story is beautiful, but ours is timeless
         </p>
       </header>
 
-      <div className="absolute w-full max-w-[644px] h-auto top-[241px] left-1/2 -translate-x-1/2 flex flex-col gap-4 px-4 md:px-4 pl-12">
+      <div className="absolute w-full max-w-[644px] h-auto top-[241px] md:top-[280px] left-1/2 -translate-x-1/2 flex flex-col gap-4 px-4 md:px-4 pl-12">
         {timelineEvents.map((event, index) => (
           <article
             key={event.year}
             className="h-auto min-h-[198px] flex flex-col gap-1 bg-white rounded-[10px] border-2 border-solid border-[#544523] shadow-[0px_4px_4px_#00000040] p-4 relative"
           >
             <div className="flex w-[87px] h-7 items-center justify-center gap-2.5 p-2.5 bg-[#fae5e6] rounded-[50px]">
-              <time className="relative w-fit [font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-xl text-center tracking-[-0.40px] leading-[normal] whitespace-nowrap">
+              <time className="relative w-fit font-serif font-normal text-[#544523] text-xl text-center tracking-[-0.40px] leading-[normal] whitespace-nowrap">
                 {event.year}
               </time>
             </div>
 
             <div className="flex flex-col gap-2.5 p-2.5">
-              <h3 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-xl tracking-[-0.40px] leading-[normal]">
+              <h3 className="relative w-fit font-times font-normal text-[#544523] text-xl tracking-[-0.40px] leading-[normal]">
                 {event.title}
               </h3>
 
-              <p className="relative [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-base md:text-xl tracking-[-0.40px] leading-[normal]">
+              <p className="relative font-times font-normal text-[#9a8960] text-base md:text-xl tracking-[-0.40px] leading-[normal]">
                 {event.description}
               </p>
             </div>
@@ -423,7 +414,7 @@ function LoveJourneySection() {
       
       {/* Timeline line for desktop */}
       <img
-        className="hidden md:block absolute top-[260px] left-[calc(50%-384px)] w-[39px] h-[466px] object-cover"
+        className="hidden md:block absolute top-[299px] left-[calc(50%-384px)] w-[39px] h-[466px] object-cover"
         alt="Timeline connector line"
         src="https://c.animaapp.com/s0gYTAvl/img/group-208@2x.png"
       />
@@ -434,14 +425,14 @@ function LoveJourneySection() {
 // Counting Down Section Component
 function CountingDownSection() {
   return (
-    <section className="relative w-full h-auto bg-[#9a9189] px-4 py-12 md:py-32 -mt-8 md:-mt-16 z-20">
+    <section className="relative w-full h-auto bg-[#9a9189] px-4 py-12 md:py-32 mt-0 md:-mt-16 z-20">
       {/* Header */}
       <div className="flex flex-col w-full max-w-[840px] mx-auto items-center gap-2.5 p-2.5">
-        <h2 className="relative self-stretch [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-white text-3xl md:text-5xl text-center tracking-[-0.96px] leading-[normal]">
+        <h2 className="relative self-stretch font-times font-normal text-white text-3xl md:text-5xl text-center tracking-[-0.96px] leading-[normal]">
           Counting Down to Our Reception
         </h2>
 
-        <p className="relative w-full max-w-[530px] [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+        <p className="relative w-full max-w-[530px] font-times font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
           Until our hearts become one...
         </p>
       </div>
@@ -453,10 +444,10 @@ function CountingDownSection() {
           {/* Days */}
           <div className="w-[calc(50%-8px)] md:w-[159px] md:flex-shrink-0 flex justify-center rounded-[10px] border border-solid border-white">
             <div className="flex w-full h-[120px] md:h-[155px] relative flex-col items-center justify-center gap-2.5 p-2.5 rounded-[10px]">
-              <div className="relative w-full font-[Consolas] font-normal text-white text-3xl md:text-[40px] text-center tracking-[-0.80px] leading-[normal]">
+              <div className="relative w-full font-mono font-normal text-white text-3xl md:text-[40px] text-center tracking-[-0.80px] leading-[normal]">
                 00
               </div>
-              <div className="relative flex items-end justify-center w-full font-[Consolas] font-normal text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+              <div className="relative flex items-end justify-center w-full font-mono font-normal text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
                 DAYS
               </div>
             </div>
@@ -465,10 +456,10 @@ function CountingDownSection() {
           {/* Hours */}
           <div className="w-[calc(50%-8px)] md:w-[159px] md:flex-shrink-0 flex justify-center rounded-[10px] border border-solid border-white">
             <div className="flex w-full h-[120px] md:h-[155px] relative flex-col items-center justify-center gap-2.5 p-2.5 rounded-[10px]">
-              <div className="relative w-full font-[Consolas] font-normal text-white text-3xl md:text-[40px] text-center tracking-[-0.80px] leading-[normal]">
+              <div className="relative w-full font-mono font-normal text-white text-3xl md:text-[40px] text-center tracking-[-0.80px] leading-[normal]">
                 00
               </div>
-              <div className="relative flex items-end justify-center w-full font-[Consolas] font-normal text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+              <div className="relative flex items-end justify-center w-full font-mono font-normal text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
                 HOURS
               </div>
             </div>
@@ -477,10 +468,10 @@ function CountingDownSection() {
           {/* Minutes */}
           <div className="w-[calc(50%-8px)] md:w-[159px] md:flex-shrink-0 flex justify-center rounded-[10px] border border-solid border-white">
             <div className="flex w-full h-[120px] md:h-[155px] relative flex-col items-center justify-center gap-2.5 p-2.5 rounded-[10px]">
-              <div className="relative w-full font-[Consolas] font-normal text-white text-3xl md:text-[40px] text-center tracking-[-0.80px] leading-[normal]">
+              <div className="relative w-full font-mono font-normal text-white text-3xl md:text-[40px] text-center tracking-[-0.80px] leading-[normal]">
                 00
               </div>
-              <div className="relative flex items-end justify-center w-full font-[Consolas] font-normal text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+              <div className="relative flex items-end justify-center w-full font-mono font-normal text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
                 MINUTES
               </div>
             </div>
@@ -489,10 +480,10 @@ function CountingDownSection() {
           {/* Seconds */}
           <div className="w-[calc(50%-8px)] md:w-[159px] md:flex-shrink-0 flex justify-center rounded-[10px] border border-solid border-white">
             <div className="flex w-full h-[120px] md:h-[155px] relative flex-col items-center justify-center gap-2.5 p-2.5 rounded-[10px]">
-              <div className="relative w-full font-[Consolas] font-normal text-white text-3xl md:text-[40px] text-center tracking-[-0.80px] leading-[normal]">
+              <div className="relative w-full font-mono font-normal text-white text-3xl md:text-[40px] text-center tracking-[-0.80px] leading-[normal]">
                 00
               </div>
-              <div className="relative flex items-end justify-center w-full font-[Consolas] font-normal text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+              <div className="relative flex items-end justify-center w-full font-mono font-normal text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
                 SECONDS
               </div>
             </div>
@@ -521,11 +512,11 @@ function WhenWhereSection() {
     <section className="relative w-full h-auto min-h-[1024px] px-4 py-12 md:py-32 bg-gradient-to-b from-[#9a9189] to-[#b8ada3] -mt-8 md:-mt-16 z-10">
       {/* Header */}
       <div className="flex flex-col w-full max-w-[382px] mx-auto items-center gap-2.5 p-2.5 mb-8">
-        <h2 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-white text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+        <h2 className="relative w-fit font-times font-normal text-white text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
           When &amp; Where
         </h2>
 
-        <p className="relative w-full [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal] md:whitespace-nowrap">
+        <p className="relative w-full font-times font-normal italic text-white text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal] md:whitespace-nowrap">
           Join us in celebrating our timeless love
         </p>
       </div>
@@ -536,7 +527,7 @@ function WhenWhereSection() {
         <article className="w-full max-w-[380px] md:w-[380px] bg-white rounded-[10px] border border-solid border-[#544523] shadow-[0px_4px_5px_#00000040] flex flex-col items-center pb-4 mx-4 md:mx-0">
           {/* Event Info */}
           <div className="flex flex-col w-full items-center gap-2.5 p-4 pt-6">
-            <h3 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-[28px] md:text-[32px] text-center tracking-[-0.64px] leading-[normal]">
+            <h3 className="relative w-fit font-times font-normal text-[#544523] text-[28px] md:text-[32px] text-center tracking-[-0.64px] leading-[normal]">
               Holy Matrimony
             </h3>
 
@@ -550,7 +541,7 @@ function WhenWhereSection() {
                   <path d="M8 2V6" stroke="#544523" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M3 10H21" stroke="#544523" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
+                <span className="font-serif font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
                   Saturday, March 15, 2025
                 </span>
               </div>
@@ -560,7 +551,7 @@ function WhenWhereSection() {
                   <circle cx="12" cy="12" r="9" stroke="#544523" strokeWidth="2"/>
                   <path d="M12 6V12L16 14" stroke="#544523" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
-                <span className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
+                <span className="font-serif font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
                   08:00 AM
                 </span>
               </div>
@@ -570,14 +561,14 @@ function WhenWhereSection() {
                   <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#544523" strokeWidth="2"/>
                   <circle cx="12" cy="10" r="3" stroke="#544523" strokeWidth="2"/>
                 </svg>
-                <span className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
+                <span className="font-serif font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
                   Masjid Al-Barokah
                 </span>
               </div>
             </div>
 
             <div className="flex w-full items-center px-2 mt-2">
-              <p className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#9a8960] text-xs md:text-sm tracking-[-0.32px] leading-[normal]">
+              <p className="font-serif font-normal text-[#9a8960] text-xs md:text-sm tracking-[-0.32px] leading-[normal]">
                 Jl. Kebahagiaan No. 123, Jakarta Selatan
               </p>
             </div>
@@ -588,7 +579,7 @@ function WhenWhereSection() {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 5V19M5 12H19" stroke="white" strokeWidth="2" strokeLinecap="round"/>
             </svg>
-            <span className="[font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-white text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+            <span className="font-times font-bold text-white text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
               Add to Calendar
             </span>
           </button>
@@ -617,7 +608,7 @@ function WhenWhereSection() {
               <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#9a8960" strokeWidth="2"/>
               <circle cx="12" cy="10" r="3" stroke="#9a8960" strokeWidth="2"/>
             </svg>
-            <span className="[font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-[#9a8960] text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+            <span className="font-times font-bold text-[#9a8960] text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
               View on Maps
             </span>
           </a>
@@ -627,7 +618,7 @@ function WhenWhereSection() {
         <article className="w-full max-w-[380px] md:w-[380px] bg-white rounded-[10px] border border-solid border-[#544523] shadow-[0px_4px_5px_#00000040] flex flex-col items-center pb-4 mx-4 md:mx-0">
           {/* Event Info */}
           <div className="flex flex-col w-full items-center gap-2.5 p-4 pt-6">
-            <h3 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-[28px] md:text-[32px] text-center tracking-[-0.64px] leading-[normal]">
+            <h3 className="relative w-fit font-times font-normal text-[#544523] text-[28px] md:text-[32px] text-center tracking-[-0.64px] leading-[normal]">
               Wedding Reception
             </h3>
 
@@ -641,7 +632,7 @@ function WhenWhereSection() {
                   <path d="M8 2V6" stroke="#544523" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M3 10H21" stroke="#544523" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
+                <span className="font-serif font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
                   Saturday, March 15, 2025
                 </span>
               </div>
@@ -651,7 +642,7 @@ function WhenWhereSection() {
                   <circle cx="12" cy="12" r="9" stroke="#544523" strokeWidth="2"/>
                   <path d="M12 6V12L16 14" stroke="#544523" strokeWidth="2" strokeLinecap="round"/>
                 </svg>
-                <span className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
+                <span className="font-serif font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
                   07:00 PM
                 </span>
               </div>
@@ -661,14 +652,14 @@ function WhenWhereSection() {
                   <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#544523" strokeWidth="2"/>
                   <circle cx="12" cy="10" r="3" stroke="#544523" strokeWidth="2"/>
                 </svg>
-                <span className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
+                <span className="font-serif font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal]">
                   The Royal Ballroom
                 </span>
               </div>
             </div>
 
             <div className="flex w-full items-center px-2 mt-2">
-              <p className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#9a8960] text-xs md:text-sm tracking-[-0.32px] leading-[normal]">
+              <p className="font-serif font-normal text-[#9a8960] text-xs md:text-sm tracking-[-0.32px] leading-[normal]">
                 Jl. Cinta Sejati No. 456, Jakarta Selatan
               </p>
             </div>
@@ -679,7 +670,7 @@ function WhenWhereSection() {
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 5V19M5 12H19" stroke="white" strokeWidth="2" strokeLinecap="round"/>
             </svg>
-            <span className="[font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-white text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+            <span className="font-times font-bold text-white text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
               Add to Calendar
             </span>
           </button>
@@ -708,7 +699,7 @@ function WhenWhereSection() {
               <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="#9a8960" strokeWidth="2"/>
               <circle cx="12" cy="10" r="3" stroke="#9a8960" strokeWidth="2"/>
             </svg>
-            <span className="[font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-[#9a8960] text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+            <span className="font-times font-bold text-[#9a8960] text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
               View on Maps
             </span>
           </a>
@@ -732,11 +723,11 @@ function OurMomentsSection() {
     <section className="relative w-full h-auto min-h-[900px] px-4 py-8 md:py-20 pb-6 md:pb-20 bg-[#c9bfb5] -mt-4 md:-mt-12 z-0">
       {/* Header */}
       <div className="w-full max-w-[669px] mx-auto flex flex-col items-center gap-2.5 p-2.5 mb-8 md:mb-12">
-        <h2 className="relative w-full [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-3xl md:text-5xl text-center tracking-[-0.96px] leading-[normal]">
+        <h2 className="relative w-full font-times font-normal text-[#544523] text-3xl md:text-5xl text-center tracking-[-0.96px] leading-[normal]">
           Our Moments
         </h2>
 
-        <p className="relative w-full [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+        <p className="relative w-full font-times font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
           A glimpse of our timeless love story
         </p>
       </div>
@@ -786,11 +777,11 @@ function OurMomentsSection() {
         <div className="flex flex-col items-center gap-4 md:gap-[17px]">
           {/* Text Content */}
           <div className="flex flex-col items-center gap-2.5 p-2.5">
-            <h3 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-2xl md:text-[32px] text-center tracking-[-0.64px] leading-[normal] whitespace-nowrap">
+            <h3 className="relative w-fit font-times font-normal text-[#544523] text-2xl md:text-[32px] text-center tracking-[-0.64px] leading-[normal] whitespace-nowrap">
               Share Your Moments
             </h3>
 
-            <p className="relative w-full max-w-[260px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-sm md:text-base text-center tracking-[-0.32px] leading-[normal]">
+            <p className="relative w-full max-w-[260px] font-times font-normal text-[#9a8960] text-sm md:text-base text-center tracking-[-0.32px] leading-[normal]">
               Tag us in your photos and videos from our special day using
             </p>
           </div>
@@ -801,7 +792,7 @@ function OurMomentsSection() {
             className="flex w-full max-w-[323.69px] h-[50px] items-center justify-center gap-2.5 p-2.5 bg-white rounded-[10px] border border-solid border-[#cfbb9a] cursor-pointer hover:bg-gray-50 transition-colors"
             aria-label="Copy wedding hashtag"
           >
-            <span className="relative w-fit [font-family:'Consolas-Regular',Helvetica] font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+            <span className="relative w-fit font-mono font-normal text-[#544523] text-sm md:text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
               {copied ? "Copied! ✓" : "#ClassicWedding2025"}
             </span>
 
@@ -857,11 +848,11 @@ function RsvpSection() {
     <section className="relative w-full h-auto min-h-[739px] px-4 py-8 md:py-12 bg-gradient-to-b from-[#c9bfb5] to-[#d4cbc1] -mt-4 md:-mt-12 z-0">
       {/* Header */}
       <div className="w-full max-w-[598px] mx-auto flex flex-col items-center gap-2.5 p-2.5 mb-8">
-        <h2 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+        <h2 className="relative w-fit font-times font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
           RSVP
         </h2>
 
-        <p className="relative w-full [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+        <p className="relative w-full font-times font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
           Please confirm your attendance to our classic celebration
         </p>
       </div>
@@ -871,7 +862,7 @@ function RsvpSection() {
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           {/* Nama Lengkap */}
           <div className="flex flex-col gap-2">
-            <label className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
+            <label className="font-times font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
               Nama Lengkap
             </label>
             <input
@@ -879,13 +870,13 @@ function RsvpSection() {
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               placeholder="Alif & partner"
-              className="w-full h-[38px] px-2.5 bg-[#f5ede4] rounded-[5px] border border-solid border-[#9a8960] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-xl tracking-[-0.40px] placeholder:text-[#9a8960]"
+              className="w-full h-[38px] px-2.5 bg-[#f5ede4] rounded-[5px] border border-solid border-[#9a8960] font-times font-normal text-[#9a8960] text-xl tracking-[-0.40px] placeholder:text-[#9a8960]"
             />
           </div>
 
           {/* Konfirmasi Kehadiran */}
           <div className="flex flex-col gap-2">
-            <label className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
+            <label className="font-times font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
               Konfirmasi Kehadiran
             </label>
             <div className="flex flex-col md:flex-row gap-4">
@@ -898,7 +889,7 @@ function RsvpSection() {
                   onChange={(e) => setFormData({ ...formData, attendance: e.target.value })}
                   className="w-5 h-5 accent-[#544523]"
                 />
-                <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-base tracking-[-0.32px]">
+                <span className="font-times font-normal text-[#544523] text-base tracking-[-0.32px]">
                   Hadir
                 </span>
               </label>
@@ -911,7 +902,7 @@ function RsvpSection() {
                   onChange={(e) => setFormData({ ...formData, attendance: e.target.value })}
                   className="w-5 h-5 accent-[#544523]"
                 />
-                <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-base tracking-[-0.32px]">
+                <span className="font-times font-normal text-[#544523] text-base tracking-[-0.32px]">
                   Tidak Hadir
                 </span>
               </label>
@@ -920,14 +911,14 @@ function RsvpSection() {
 
           {/* Jumlah Tamu */}
           <div className="flex flex-col gap-2">
-            <label className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
+            <label className="font-times font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
               Jumlah tamu
             </label>
             <div className="relative">
               <select
                 value={formData.guests}
                 onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                className="w-full h-[38px] px-2.5 bg-[#f5ede4] rounded-[5px] border border-solid border-[#9a8960] [font-family:'Georgia-Regular',Helvetica] font-normal text-[#9a8960] text-xl tracking-[-0.40px] appearance-none cursor-pointer"
+                className="w-full h-[38px] px-2.5 bg-[#f5ede4] rounded-[5px] border border-solid border-[#9a8960] font-serif font-normal text-[#9a8960] text-xl tracking-[-0.40px] appearance-none cursor-pointer"
               >
                 <option value="1">1 orang</option>
                 <option value="2">2 orang</option>
@@ -948,7 +939,7 @@ function RsvpSection() {
 
           {/* Pesan untuk Mempelai */}
           <div className="flex flex-col gap-2">
-            <label className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
+            <label className="font-times font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
               Pesan untuk Mempelai (Opsional)
             </label>
             <textarea
@@ -956,7 +947,7 @@ function RsvpSection() {
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               placeholder="Tulis Pesan anda..."
               rows={4}
-              className="w-full px-2.5 py-2.5 bg-[#f5ede4] rounded-[5px] border border-solid border-[#9a8960] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-xl tracking-[-0.40px] placeholder:text-[#9a8960] resize-none"
+              className="w-full px-2.5 py-2.5 bg-[#f5ede4] rounded-[5px] border border-solid border-[#9a8960] font-times font-normal text-[#9a8960] text-xl tracking-[-0.40px] placeholder:text-[#9a8960] resize-none"
             />
           </div>
 
@@ -969,7 +960,7 @@ function RsvpSection() {
               <path d="M22 2L11 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+            <span className="font-times font-normal text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
               Kirim RSVP
             </span>
           </button>
@@ -1026,11 +1017,11 @@ function WeddingWishesSection() {
     <section className="relative w-full h-auto min-h-[801px] px-4 py-8 md:py-12 bg-gradient-to-b from-[#d4cbc1] to-[#e8e4df] -mt-4 md:-mt-12 z-0">
       {/* Header */}
       <div className="w-full max-w-[866px] mx-auto flex flex-col items-center gap-2.5 p-2.5 mb-8 md:mb-12">
-        <h2 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+        <h2 className="relative w-fit font-times font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
           Wedding Wishes
         </h2>
 
-        <p className="relative w-full [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+        <p className="relative w-full font-times font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
           Send your love and best wishes for our classic celebration
         </p>
       </div>
@@ -1045,7 +1036,7 @@ function WeddingWishesSection() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.57831 8.50903 2.99871 7.05 2.99871C5.59096 2.99871 4.19169 3.57831 3.16 4.61C2.1283 5.64169 1.54871 7.04097 1.54871 8.5C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7564 11.2728 22.0329 10.6054C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39464C21.7564 5.72718 21.351 5.12084 20.84 4.61Z" stroke="#544523" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
+              <span className="font-times font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
                 Kirim Ucapan
               </span>
             </div>
@@ -1056,7 +1047,7 @@ function WeddingWishesSection() {
               value={wishForm.name}
               onChange={(e) => setWishForm({ ...wishForm, name: e.target.value })}
               placeholder="Alif & partner"
-              className="w-full h-11 px-2.5 bg-[#f5eee5] rounded-[5px] border border-solid border-[#9a8960] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-xl tracking-[-0.40px] placeholder:text-[#9a8960]"
+              className="w-full h-11 px-2.5 bg-[#f5eee5] rounded-[5px] border border-solid border-[#9a8960] font-times font-normal text-[#9a8960] text-xl tracking-[-0.40px] placeholder:text-[#9a8960]"
             />
 
             {/* Message Textarea */}
@@ -1065,7 +1056,7 @@ function WeddingWishesSection() {
               onChange={(e) => setWishForm({ ...wishForm, message: e.target.value })}
               placeholder="Tulis ucapan atau doa untuk mempelai..."
               rows={6}
-              className="w-full px-2.5 py-2.5 bg-[#f5eee5] rounded-[5px] border border-solid border-[#9a8960] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-xl tracking-[-0.40px] placeholder:text-[#9a8960] resize-none"
+              className="w-full px-2.5 py-2.5 bg-[#f5eee5] rounded-[5px] border border-solid border-[#9a8960] font-times font-normal text-[#9a8960] text-xl tracking-[-0.40px] placeholder:text-[#9a8960] resize-none"
             />
 
             {/* Submit Button */}
@@ -1076,7 +1067,7 @@ function WeddingWishesSection() {
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.57831 8.50903 2.99871 7.05 2.99871C5.59096 2.99871 4.19169 3.57831 3.16 4.61C2.1283 5.64169 1.54871 7.04097 1.54871 8.5C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7564 11.2728 22.0329 10.6054C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39464C21.7564 5.72718 21.351 5.12084 20.84 4.61Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+              <span className="font-times font-normal text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
                 Kirim Ucapan
               </span>
             </button>
@@ -1093,7 +1084,7 @@ function WeddingWishesSection() {
               <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#544523" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#544523" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
+            <span className="font-times font-normal text-[#544523] text-base tracking-[-0.32px] leading-[normal]">
               Ucapan dari Tamu ({wishes.length})
             </span>
           </div>
@@ -1108,14 +1099,14 @@ function WeddingWishesSection() {
                 >
                   <div className="flex flex-col gap-2.5">
                     <div className="flex justify-between items-start">
-                      <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-sm tracking-[-0.28px] leading-[normal]">
+                      <span className="font-times font-normal text-[#544523] text-sm tracking-[-0.28px] leading-[normal]">
                         {wish.name}
                       </span>
-                      <span className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-xs tracking-[-0.24px] leading-[normal]">
+                      <span className="font-serif font-normal text-[#544523] text-xs tracking-[-0.24px] leading-[normal]">
                         {wish.time}
                       </span>
                     </div>
-                    <p className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-xs tracking-[-0.24px] leading-[normal]">
+                    <p className="font-times font-normal text-[#9a8960] text-xs tracking-[-0.24px] leading-[normal]">
                       {wish.message}
                     </p>
                   </div>
@@ -1155,11 +1146,11 @@ function WeddingGiftSection() {
     <section className="relative w-full h-auto min-h-[652px] px-4 py-8 md:py-12 bg-gradient-to-b from-[#e8e4df] to-[#f5f3f1] -mt-4 md:-mt-12 z-0">
       {/* Header */}
       <div className="w-full max-w-[859px] mx-auto flex flex-col items-center gap-2.5 p-2.5 mb-8">
-        <h2 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+        <h2 className="relative w-fit font-times font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
           Wedding Gift
         </h2>
 
-        <p className="relative w-full [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+        <p className="relative w-full font-times font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
           Your presence is the greatest gift, but if you wish to honor us with something special...
         </p>
       </div>
@@ -1172,7 +1163,7 @@ function WeddingGiftSection() {
             activeTab === "transfer" ? "bg-white" : "bg-transparent"
           }`}
         >
-          <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-xs tracking-[-0.24px] leading-[normal] whitespace-nowrap">
+          <span className="font-times font-normal text-[#544523] text-xs tracking-[-0.24px] leading-[normal] whitespace-nowrap">
             Digital Transfer
           </span>
         </button>
@@ -1183,7 +1174,7 @@ function WeddingGiftSection() {
             activeTab === "registry" ? "bg-white" : "bg-transparent"
           }`}
         >
-          <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-xs tracking-[-0.24px] leading-[normal] whitespace-nowrap">
+          <span className="font-times font-normal text-[#544523] text-xs tracking-[-0.24px] leading-[normal] whitespace-nowrap">
             Wedding Registry
           </span>
         </button>
@@ -1194,7 +1185,7 @@ function WeddingGiftSection() {
             activeTab === "kado" ? "bg-white" : "bg-transparent"
           }`}
         >
-          <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-xs tracking-[-0.24px] leading-[normal] whitespace-nowrap">
+          <span className="font-times font-normal text-[#544523] text-xs tracking-[-0.24px] leading-[normal] whitespace-nowrap">
             Kirim Kado
           </span>
         </button>
@@ -1211,14 +1202,14 @@ function WeddingGiftSection() {
         )}
         {activeTab === "registry" && (
           <div className="w-full h-[359px] bg-white rounded-[10px] border border-solid border-[#9a8960] shadow-[0px_4px_4px_#00000040] flex items-center justify-center p-8">
-            <p className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-xl text-center tracking-[-0.40px] leading-[normal]">
+            <p className="font-times font-normal text-[#9a8960] text-xl text-center tracking-[-0.40px] leading-[normal]">
               Wedding Registry information will be displayed here
             </p>
           </div>
         )}
         {activeTab === "kado" && (
           <div className="w-full h-[359px] bg-white rounded-[10px] border border-solid border-[#9a8960] shadow-[0px_4px_4px_#00000040] flex items-center justify-center p-8">
-            <p className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-xl text-center tracking-[-0.40px] leading-[normal]">
+            <p className="font-times font-normal text-[#9a8960] text-xl text-center tracking-[-0.40px] leading-[normal]">
               Kirim Kado information will be displayed here
             </p>
           </div>
@@ -1259,11 +1250,11 @@ function GuestCheckinSection() {
 
       {/* Header */}
       <div className="relative w-full max-w-[1046px] mx-auto flex flex-col items-center gap-2.5 p-2.5 mb-8 z-10">
-        <h2 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
+        <h2 className="relative w-fit font-times font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
           Guest Check-in
         </h2>
 
-        <p className="relative w-full [font-family:'Times_New_Roman-Italic',Helvetica] font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal] drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
+        <p className="relative w-full font-times font-normal italic text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal] drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">
           Scan this QR code when you arrive at our classic celebration
         </p>
       </div>
@@ -1272,13 +1263,13 @@ function GuestCheckinSection() {
       <div className="relative w-full max-w-[559px] mx-auto bg-white/50 backdrop-blur-sm rounded-[10px] border border-solid border-[#9a8960] shadow-[0px_4px_4px_#00000040] p-6 md:p-8 z-10">
         {/* Welcome Section */}
         <div className="flex flex-col items-center gap-2.5 mb-8">
-          <h3 className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          <h3 className="font-times font-normal text-[#544523] text-2xl text-center tracking-[-0.48px] leading-[normal]">
             Welcome,
           </h3>
-          <p className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-xl text-center tracking-[-0.40px] leading-[normal]">
+          <p className="font-times font-normal text-[#9a8960] text-xl text-center tracking-[-0.40px] leading-[normal]">
             Dear Beloved Guest
           </p>
-          <p className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#9a8960] text-base text-center tracking-[-0.32px] leading-[normal]">
+          <p className="font-serif font-normal text-[#9a8960] text-base text-center tracking-[-0.32px] leading-[normal]">
             Guest ID: G2025-001
           </p>
         </div>
@@ -1293,7 +1284,7 @@ function GuestCheckinSection() {
             />
           ) : (
             <div className="w-[200px] h-[200px] bg-[#f5eee5] rounded-[10px] border border-dashed border-[#9a8960] flex items-center justify-center">
-              <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-sm text-center">
+              <span className="font-times font-normal text-[#9a8960] text-sm text-center">
                 QR Code will appear here
               </span>
             </div>
@@ -1311,7 +1302,7 @@ function GuestCheckinSection() {
             <rect x="3" y="13" width="8" height="8" stroke="white" strokeWidth="2"/>
             <rect x="13" y="13" width="8" height="8" stroke="white" strokeWidth="2"/>
           </svg>
-          <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+          <span className="font-times font-normal text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
             Generate QR Code
           </span>
         </button>
@@ -1321,10 +1312,10 @@ function GuestCheckinSection() {
 
         {/* Tips Section */}
         <div className="flex flex-col items-center gap-2.5">
-          <h4 className="[font-family:'Times_New_Roman-Bold',Helvetica] font-bold text-[#544523] text-xl text-center tracking-[-0.40px] leading-[normal]">
+          <h4 className="font-times font-bold text-[#544523] text-xl text-center tracking-[-0.40px] leading-[normal]">
             Tips:
           </h4>
-          <p className="max-w-[333px] [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-sm text-center tracking-[-0.28px] leading-[normal]">
+          <p className="max-w-[333px] font-times font-normal text-[#9a8960] text-sm text-center tracking-[-0.28px] leading-[normal]">
             Save QR code to your phone<br />
             Show to reception team upon arrival<br />
             Keep your phone charged
@@ -1370,11 +1361,11 @@ function ThankYouSection() {
       <div className="relative z-10 flex flex-col items-center gap-8 max-w-[557px] mx-auto">
         {/* Thank You Header */}
         <div className="flex flex-col items-center gap-2.5 p-2.5">
-          <h2 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+          <h2 className="relative w-fit font-times font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
             Thank You
           </h2>
 
-          <p className="relative w-full [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          <p className="relative w-full font-times font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
             Your presence and wishes mean the world to us. Thank you for being part of our timeless love story.
           </p>
         </div>
@@ -1385,18 +1376,18 @@ function ThankYouSection() {
         {/* Made with Love */}
         <div className="flex flex-col items-center gap-2.5 p-2.5">
           <div className="flex items-center gap-2.5 flex-wrap justify-center">
-            <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+            <span className="font-times font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
               Made with
             </span>
             <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.99817 16.95 2.99817C16.2275 2.99817 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.57831 8.50903 2.99871 7.05 2.99871C5.59096 2.99871 4.19169 3.57831 3.16 4.61C2.1283 5.64169 1.54871 7.04097 1.54871 8.5C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7564 11.2728 22.0329 10.6054C22.3095 9.93789 22.4518 9.22248 22.4518 8.5C22.4518 7.77752 22.3095 7.06211 22.0329 6.39464C21.7564 5.72718 21.351 5.12084 20.84 4.61Z" fill="#9a8960"/>
             </svg>
-            <span className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+            <span className="font-times font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
               for our special day
             </span>
           </div>
 
-          <p className="[font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal] whitespace-nowrap">
+          <p className="font-times font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal] whitespace-nowrap">
             © 2025 Prefere Digital Invitation
           </p>
         </div>
@@ -1442,11 +1433,11 @@ function DressCodeSection() {
       <div className="w-full max-w-[800px] mx-auto bg-[#e6d7c4] rounded-[10px] border border-solid border-[#cfbb9a] p-6 md:p-8">
         {/* Header */}
         <div className="flex flex-col w-full max-w-[382px] mx-auto items-center gap-2 p-2.5 mb-8">
-          <h2 className="relative w-fit [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+          <h2 className="relative w-fit font-times font-normal text-[#544523] text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
             Dress Code
           </h2>
 
-          <p className="relative w-full [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          <p className="relative w-full font-times font-normal text-[#9a8960] text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
             Coquette Theme
           </p>
         </div>
@@ -1457,7 +1448,7 @@ function DressCodeSection() {
             {/* Dark Olive Card */}
             <div className="w-full max-w-[243px] bg-white rounded-[10px] border-[0.5px] border-solid border-[#0000001a] flex flex-col items-center justify-center gap-2.5 p-6">
               <div className="w-[70px] h-[70px] bg-[#544523] rounded-full" />
-              <div className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+              <div className="font-serif font-normal text-[#544523] text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
                 Dark Olive
               </div>
             </div>
@@ -1465,7 +1456,7 @@ function DressCodeSection() {
             {/* Antique Brass Card */}
             <div className="w-full max-w-[243px] bg-white rounded-[10px] border-[0.5px] border-solid border-[#0000001a] flex flex-col items-center justify-center gap-2.5 p-6">
               <div className="w-[70px] h-[70px] bg-[#9a8960] rounded-full" />
-              <div className="[font-family:'Georgia-Regular',Helvetica] font-normal text-[#544523] text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+              <div className="font-serif font-normal text-[#544523] text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
                 Antique Brass
               </div>
             </div>
@@ -1473,7 +1464,7 @@ function DressCodeSection() {
         </div>
 
         {/* Description */}
-        <p className="w-full max-w-[616px] mx-auto [font-family:'Times_New_Roman-Regular',Helvetica] font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal] px-4">
+        <p className="w-full max-w-[616px] mx-auto font-times font-normal text-[#9a8960] text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal] px-4">
           We kindly request our guests to wear classic rose colors and soft pink
         </p>
       </div>
