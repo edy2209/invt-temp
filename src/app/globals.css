@@ -35,6 +35,14 @@ body {
   font-family: var(--font-poppins), sans-serif;
 }
 
+.font-times {
+  font-family: var(--font-libre-baskerville), 'Times New Roman', serif;
+}
+
+.font-mono {
+  font-family: var(--font-roboto-mono), 'Courier New', monospace;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
