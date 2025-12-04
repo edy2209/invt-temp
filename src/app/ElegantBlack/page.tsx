@@ -132,6 +132,15 @@ export default function ElegantBlackTemplate() {
         
         {/* RSVP Section */}
         <RSVPSection />
+        
+        {/* Wishes Section */}
+        <WishesSection />
+        
+        {/* Wedding Gift Section */}
+        <WeddingGiftSection />
+        
+        {/* QR Code Section */}
+        <QRCodeSection />
       </section>
     </div>
   );
@@ -318,11 +327,23 @@ function CountingDownSection() {
       </div>
 
       {/* Decorative Image - Mobile Only (Above Countdown) */}
-      <img
-        className="block md:hidden mx-auto w-[280px] h-[278px] object-cover mb-8"
-        alt="Elegant decoration"
-        src="https://c.animaapp.com/IDVqyAUC/img/mask-group@2x.png"
-      />
+      <div className="block md:hidden mx-auto w-[280px] h-[278px] mb-8">
+        <img
+          src="/assets/elegant/fotomask1.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/maskfinal.svg)',
+            maskSize: 'cover',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/maskfinal.svg)',
+            WebkitMaskSize: 'cover',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
 
       {/* Countdown Timer Container */}
       <div className="relative md:absolute lg:absolute w-full md:w-[280px] lg:w-[338px] h-auto lg:h-[330px] top-8 md:top-[154px] lg:top-[154px] left-1/2 md:left-[80px] lg:left-[210px] -translate-x-1/2 md:translate-x-0 lg:translate-x-0 mt-0 md:mt-0 lg:mt-0">
@@ -407,11 +428,23 @@ function CountingDownSection() {
       </div>
 
       {/* Decorative Image - iPad & Desktop */}
-      <img
-        className="hidden md:block absolute md:top-[119px] lg:top-[119px] md:right-[50px] lg:left-[810px] md:w-[340px] lg:w-[411px] md:h-[338px] lg:h-[408px] object-cover"
-        alt="Elegant decoration"
-        src="https://c.animaapp.com/IDVqyAUC/img/mask-group@2x.png"
-      />
+      <div className="hidden md:block absolute md:top-[119px] lg:top-[119px] md:right-[50px] lg:left-[810px] md:w-[340px] lg:w-[411px] md:h-[338px] lg:h-[408px]">
+        <img
+          src="/assets/elegant/fotomask1.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/maskfinal.svg)',
+            maskSize: 'cover',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/maskfinal.svg)',
+            WebkitMaskSize: 'cover',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
     </section>
   );
 }
@@ -961,3 +994,452 @@ function RSVPSection() {
     </section>
   );
 }
+
+// Wishes Section Component
+function WishesSection() {
+  const [name, setName] = React.useState("");
+  const [message, setMessage] = React.useState("");
+
+  const wishes = [
+    {
+      id: 1,
+      name: "Sarah & David",
+      message: "Selamat atas pernikahan kalian! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Bahagia selalu! 💕",
+      timestamp: "2 hari yang lalu",
+    },
+    {
+      id: 2,
+      name: "Maya",
+      message: "Finally! Kalian memang couple goals banget. Semoga langgeng sampai kakek nenek ya! 👰🤵",
+      timestamp: "1 hari yang lalu",
+    },
+    {
+      id: 3,
+      name: "Ahmad & Sari",
+      message: "Barakallahu lakuma wa baraka alaikuma wa jama'a bainakuma fi khair. Selamat menempuh hidup baru! 🤲",
+      timestamp: "8 jam yang lalu",
+    },
+    {
+      id: 4,
+      name: "Sarah & David",
+      message: "Selamat atas pernikahan kalian! Semoga menjadi keluarga yang sakinah, mawaddah, warahmah. Bahagia selalu! 💕",
+      timestamp: "2 hari yang lalu",
+    },
+    {
+      id: 5,
+      name: "Maya",
+      message: "Finally! Kalian memang couple goals banget. Semoga langgeng sampai kakek nenek ya! 👰🤵",
+      timestamp: "1 hari yang lalu",
+      highlighted: true,
+      highlightColor: "green",
+    },
+    {
+      id: 6,
+      name: "Ahmad & Sari",
+      message: "Barakallahu lakuma wa baraka alaikuma wa jama'a bainakuma fi khair. Selamat menempuh hidup baru! 🤲",
+      timestamp: "8 jam yang lalu",
+      highlighted: true,
+      highlightColor: "pink",
+    },
+  ];
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+  };
+
+  return (
+    <section className="relative w-full min-h-[900px] md:min-h-[1100px] lg:h-[801px] bg-gradient-to-b from-[rgba(0,0,0,0.85)] to-[rgba(20,20,20,0.5)] px-4 py-12 md:px-8 md:py-16 lg:px-0 lg:py-0">
+      {/* Header */}
+      <div className="w-full max-w-[794px] mx-auto items-center pt-12 lg:pt-0 lg:absolute lg:top-[172px] lg:left-[calc(50%-397px)] flex flex-col gap-2.5 p-2.5 mb-12 lg:mb-0">
+        <h1 className="relative w-fit font-times font-normal text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal]">
+          <span className="text-white tracking-[-0.46px]">Wedding</span>
+          <span className="text-[#bb2245] tracking-[-0.46px]">&nbsp;</span>
+          <span className="text-white tracking-[-0.46px]">Wishes</span>
+        </h1>
+        <p className="relative w-full font-times font-normal text-[#d1d1d1] text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          Send your love and best wishes for our elegant celebration
+        </p>
+      </div>
+
+      {/* Content Container - Responsive Grid */}
+      <div className="relative w-full max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[138px] lg:absolute lg:top-[345px] lg:left-[calc(50%-588px)] px-4 lg:px-0">
+        
+        {/* Send Wishes Form Section */}
+        <div className="relative w-full max-w-[383px] h-[384px] mx-auto lg:mx-0">
+          <div className="absolute -top-px -left-px w-full h-full border border-solid border-white shadow-[0px_4px_4px_#00000040]" />
+
+          <div className="relative w-full h-full flex flex-col">
+            <div className="w-full h-7 items-center gap-2.5 pl-0 pr-2.5 py-2.5 mt-7 flex justify-center">
+              <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                <path d="M8 2L6.5 6H2L5.5 8.5L4 13L8 10L12 13L10.5 8.5L14 6H9.5L8 2Z" fill="white"/>
+              </svg>
+              <h2 className="relative w-fit font-times font-normal text-white text-base text-center tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+                Kirim Ucapan
+              </h2>
+            </div>
+
+            <form onSubmit={handleSubmit} className="relative flex flex-col items-center gap-4 px-6 mt-3">
+              <input
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Alif & partner"
+                className="w-full max-w-[333px] h-11 p-2.5 border border-solid border-white bg-transparent text-[#d1d1d1] font-times text-xl text-center tracking-[-0.40px] leading-[normal] placeholder:text-[#d1d1d1] focus:outline-none focus:ring-1 focus:ring-white"
+              />
+
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Tulis ucapan atau doa untuk mempelai..."
+                className="w-full max-w-[333px] h-[171px] p-2.5 border border-solid border-white bg-transparent text-[#d1d1d1] font-times text-xl text-center tracking-[-0.40px] leading-[normal] placeholder:text-[#d1d1d1] resize-none focus:outline-none focus:ring-1 focus:ring-white"
+              />
+
+              <button
+                type="submit"
+                className="w-full max-w-[333px] h-11 items-center justify-center gap-2.5 p-2.5 bg-white hover:bg-gray-100 transition-colors flex cursor-pointer"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                  <path d="M8 2L6.5 6H2L5.5 8.5L4 13L8 10L12 13L10.5 8.5L14 6H9.5L8 2Z" fill="black"/>
+                </svg>
+                <span className="font-times font-normal text-black text-base text-center tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+                  Kirim Ucapan
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* Guest Wishes Section */}
+        <div className="relative w-full max-w-[383px] h-[384px] mx-auto lg:mx-0">
+          <div className="absolute -top-px -left-px w-full h-full border border-solid border-white shadow-[0px_4px_4px_#00000040]" />
+
+          <div className="relative w-full h-full flex flex-col">
+            <div className="w-full h-6 items-center gap-2.5 pl-0 pr-2.5 py-2.5 mt-[26px] flex justify-center">
+              <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                <path d="M8 8C9.66 8 11 6.66 11 5C11 3.34 9.66 2 8 2C6.34 2 5 3.34 5 5C5 6.66 6.34 8 8 8ZM8 9.5C5.67 9.5 1 10.67 1 13V14.5H15V13C15 10.67 10.33 9.5 8 9.5Z" fill="white"/>
+              </svg>
+              <h2 className="relative w-fit font-times font-normal text-white text-base text-center tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+                Ucapan dari Tamu ({wishes.length})
+              </h2>
+            </div>
+
+            <div className="mt-[34px] mx-[26px] w-[calc(100%-52px)] h-[308px] flex-col gap-[11px] overflow-hidden overflow-y-scroll flex">
+              {wishes.map((wish) => (
+                <div
+                  key={wish.id}
+                  className="w-full flex justify-center border-2 border-solid border-white shadow-[0px_4px_4px_#00000040]"
+                >
+                  <div className="w-full h-[83px] relative items-start flex flex-col gap-2.5 p-2.5">
+                    <h3 className="relative w-fit font-times font-normal text-white text-sm tracking-[-0.28px] leading-[normal] whitespace-nowrap">
+                      {wish.name}
+                    </h3>
+                    <p className="relative self-stretch font-times font-normal text-[#d1d1d1] text-xs tracking-[-0.24px] leading-[normal]">
+                      {wish.message}
+                    </p>
+                    <time className="absolute top-[11px] right-[8px] w-[82px] font-georgia font-normal text-white text-xs text-right tracking-[-0.24px] leading-[normal]">
+                      {wish.timestamp}
+                    </time>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Scrollbar indicator */}
+            <div className="absolute top-[60px] right-[18px] w-1 h-[307px] bg-[#d9d9d9] rounded-[10px]" />
+            <div className="absolute top-[60px] right-[18px] w-1 h-[50px] bg-white rounded-[10px]" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Wedding Gift Section Component
+function WeddingGiftSection() {
+  const [activeTab, setActiveTab] = React.useState("digital-transfer");
+  const [copiedId, setCopiedId] = React.useState<number | null>(null);
+
+  const bankAccounts = [
+    {
+      id: 1,
+      bankName: "Bank Mandiri",
+      accountHolder: "Alexander W. Thompson",
+      accountNumber: "1234 5678 90123",
+      lineImage: "https://c.animaapp.com/lsWpqHLY/img/line-3.svg",
+    },
+    {
+      id: 2,
+      bankName: "Bank BCA",
+      accountHolder: "Isabella G. Martinez",
+      accountNumber: "9876 5432 10987",
+      lineImage: "https://c.animaapp.com/lsWpqHLY/img/line-2.svg",
+    },
+  ];
+
+  const tabs = [
+    { id: "digital-transfer", label: "Digital Transfer" },
+    { id: "wedding-registry", label: "Wedding Registry" },
+    { id: "kirim-kado", label: "Kirim Kado" },
+  ];
+
+  const handleCopyToClipboard = async (accountNumber: string, id: number) => {
+    try {
+      await navigator.clipboard.writeText(accountNumber.replace(/\s/g, ""));
+      setCopiedId(id);
+      setTimeout(() => setCopiedId(null), 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
+
+  const handleTabClick = (tabId: string) => {
+    setActiveTab(tabId);
+  };
+
+  const handleTabKeyDown = (event: React.KeyboardEvent, tabId: string) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      setActiveTab(tabId);
+    }
+  };
+
+  return (
+    <section className="relative w-full min-h-[700px] md:min-h-[700px] lg:h-[652px] bg-gradient-to-b from-[rgba(20,20,20,0.5)] to-[rgba(40,40,40,0.6)] px-4 py-12 md:px-8 md:py-16 lg:px-0 lg:py-0 overflow-hidden">
+      {/* Background Decorative Image */}
+      <img
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-10"
+        alt="Decorative background"
+        src="https://c.animaapp.com/lsWpqHLY/img/download--2--1.png"
+      />
+
+      {/* Header */}
+      <div className="relative z-10 w-full max-w-[859px] mx-auto pt-12 lg:pt-0 lg:absolute lg:top-[40px] lg:left-[calc(50%-430px)] flex flex-col items-center gap-2.5 p-2.5 mb-8 lg:mb-0">
+        <h1 className="font-times font-normal text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal]">
+          <span className="text-black tracking-[-0.46px]">Wedding</span>
+          <span className="text-[#bb2245] tracking-[-0.46px]">&nbsp;</span>
+          <span className="text-black tracking-[-0.46px]">Gift</span>
+        </h1>
+        <p className="w-full font-times font-normal text-black text-xl md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          Your presence is the greatest gift, but if you wish to honor us with something special...
+        </p>
+      </div>
+
+      {/* Tabs Navigation */}
+      <nav
+        className="relative z-10 w-full max-w-[602px] h-[50px] mx-auto lg:absolute lg:top-[185px] lg:left-[calc(50%-301px)] border border-solid border-black flex items-center mb-4 lg:mb-0"
+        role="tablist"
+        aria-label="Gift options"
+      >
+        {tabs.map((tab, index) => (
+          <button
+            key={tab.id}
+            role="tab"
+            aria-selected={activeTab === tab.id}
+            aria-controls={`${tab.id}-panel`}
+            id={`${tab.id}-tab`}
+            tabIndex={activeTab === tab.id ? 0 : -1}
+            onClick={() => handleTabClick(tab.id)}
+            onKeyDown={(e) => handleTabKeyDown(e, tab.id)}
+            className={`flex-1 h-full flex items-center justify-center ${
+              activeTab === tab.id ? "bg-black" : "bg-transparent"
+            } transition-colors cursor-pointer`}
+          >
+            <span
+              className={`font-times font-normal ${
+                activeTab === tab.id ? "text-white" : "text-black"
+              } text-sm md:text-base text-center tracking-[-0.24px] leading-[normal]`}
+            >
+              {tab.label}
+            </span>
+          </button>
+        ))}
+      </nav>
+
+      {/* Digital Transfer Panel */}
+      <div
+        id="digital-transfer-panel"
+        role="tabpanel"
+        aria-labelledby="digital-transfer-tab"
+        className={`relative z-10 w-full max-w-[601px] mx-auto lg:absolute lg:top-[245px] lg:left-[calc(50%-300px)] border border-solid border-white shadow-[0px_4px_4px_#00000040] ${
+          activeTab !== "digital-transfer" ? "hidden" : ""
+        }`}
+      >
+        <div className="w-full h-auto py-4 px-6 flex flex-col gap-6">
+          <div className="flex items-center gap-2.5">
+            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="5" width="20" height="14" rx="2" stroke="black" strokeWidth="2"/>
+              <path d="M2 10H22" stroke="black" strokeWidth="2"/>
+            </svg>
+            <h2 className="font-times font-normal text-black text-base tracking-[-0.32px] leading-[normal]">
+              Transfer Bank
+            </h2>
+          </div>
+
+          {bankAccounts.map((account) => (
+            <div
+              key={account.id}
+              className="relative w-full border border-solid border-black p-4"
+            >
+              <button
+                onClick={() => handleCopyToClipboard(account.accountNumber, account.id)}
+                className="absolute top-4 right-4 w-8 h-8 hover:opacity-70 transition-opacity"
+                aria-label={`Copy ${account.bankName} account number`}
+                title={copiedId === account.id ? "Copied!" : "Copy account number"}
+              >
+                <img
+                  className="w-8 h-8"
+                  alt=""
+                  src="https://c.animaapp.com/lsWpqHLY/img/copy-01-1.svg"
+                />
+              </button>
+
+              <div className="flex flex-col gap-2">
+                <h3 className="font-times font-bold text-black text-xl tracking-[-0.40px] leading-[normal]">
+                  {account.bankName}
+                </h3>
+                <p className="font-times font-normal text-black text-base tracking-[-0.32px] leading-[normal]">
+                  {account.accountHolder}
+                </p>
+                <div className="mt-2">
+                  <img
+                    className="w-full max-w-[212px] h-[3px] mb-2"
+                    alt=""
+                    src={account.lineImage}
+                  />
+                  <p className="font-times font-bold text-black text-2xl md:text-[32px] tracking-[-0.64px] leading-[normal]">
+                    {account.accountNumber}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Wedding Registry Panel */}
+      <div
+        id="wedding-registry-panel"
+        role="tabpanel"
+        aria-labelledby="wedding-registry-tab"
+        className={`relative z-10 w-full max-w-[601px] h-[351px] mx-auto lg:absolute lg:top-[245px] lg:left-[calc(50%-300px)] border border-solid border-white shadow-[0px_4px_4px_#00000040] ${
+          activeTab !== "wedding-registry" ? "hidden" : ""
+        }`}
+      >
+        <div className="w-full h-full flex items-center justify-center">
+          <p className="font-times font-normal text-black text-base text-center tracking-[-0.32px] leading-[normal]">
+            Wedding Registry content coming soon
+          </p>
+        </div>
+      </div>
+
+      {/* Kirim Kado Panel */}
+      <div
+        id="kirim-kado-panel"
+        role="tabpanel"
+        aria-labelledby="kirim-kado-tab"
+        className={`relative z-10 w-full max-w-[601px] h-[351px] mx-auto lg:absolute lg:top-[245px] lg:left-[calc(50%-300px)] border border-solid border-white shadow-[0px_4px_4px_#00000040] ${
+          activeTab !== "kirim-kado" ? "hidden" : ""
+        }`}
+      >
+        <div className="w-full h-full flex items-center justify-center">
+          <p className="font-times font-normal text-black text-base text-center tracking-[-0.32px] leading-[normal]">
+            Kirim Kado content coming soon
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function QRCodeSection() {
+  const [guestData] = React.useState({
+    guestName: "Dear Distinguished Guest",
+    guestId: "G2025-001",
+  });
+
+  const tips = [
+    "Save QR code to your phone",
+    "Show to reception team upon arrival",
+    "Keep your phone charged",
+  ];
+
+  return (
+    <section className="relative w-full min-h-[769px] py-16 px-4 bg-gradient-to-b from-[rgba(40,40,40,0.6)] to-[rgba(50,50,50,0.65)]">
+      {/* Header */}
+      <header className="w-full max-w-[630px] mx-auto flex flex-col items-center gap-2.5 mb-12">
+        <h1 className="font-times font-normal text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+          <span className="text-white">Guest</span>
+          <span className="text-[#bb2245]">&nbsp;</span>
+          <span className="text-white">Check-in</span>
+        </h1>
+
+        <p className="font-times font-normal text-white text-2xl text-center tracking-[-0.48px] leading-[normal] px-4">
+          Scan this QR code when you arrive at our elegant celebration
+        </p>
+      </header>
+
+      {/* QR Card */}
+      <div className="relative w-full max-w-[559px] mx-auto border-2 border-solid border-white shadow-[0px_4px_4px_#00000040] py-12 px-6">
+        {/* Guest Info */}
+        <div className="flex flex-col items-center gap-2 mb-8">
+          <div className="font-times font-normal text-white text-2xl text-center tracking-[-0.48px] leading-[normal]">
+            Welcome,
+          </div>
+
+          <div className="font-times font-normal text-white text-xl text-center tracking-[-0.40px] leading-[normal]">
+            {guestData.guestName}
+          </div>
+
+          <div className="font-georgia font-normal text-white text-base text-center tracking-[-0.32px] leading-[normal]">
+            Guest ID: {guestData.guestId}
+          </div>
+        </div>
+
+        {/* QR Code Image */}
+        <div className="flex justify-center mb-8">
+          <img
+            className="w-[200px] h-[200px] aspect-square"
+            alt="QR code for guest check-in"
+            src="https://c.animaapp.com/7acqYfoE/img/qr-code.svg"
+          />
+        </div>
+
+        {/* Generate Button */}
+        <button
+          className="flex w-full max-w-[333px] mx-auto h-[38px] items-center justify-center gap-2.5 bg-white hover:bg-gray-50 transition-colors cursor-pointer mb-6"
+          aria-label="Generate QR Code"
+        >
+          <img
+            className="w-4 h-4 aspect-square"
+            alt=""
+            src="https://c.animaapp.com/7acqYfoE/img/qr-code-1.svg"
+          />
+
+          <span className="font-times font-normal text-black text-base text-center tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+            Generate QR Code
+          </span>
+        </button>
+
+        {/* Divider Line */}
+        <div className="w-full max-w-[333px] mx-auto h-px bg-white mb-4" />
+
+        {/* Tips Section */}
+        <aside className="w-full max-w-[333px] mx-auto flex flex-col items-center gap-2">
+          <h2 className="font-times font-bold text-white text-xl text-center tracking-[-0.40px] leading-[normal]">
+            Tips:
+          </h2>
+
+          <ul className="font-times font-normal text-white text-sm tracking-[-0.28px] leading-[normal] list-none text-center space-y-1">
+            {tips.map((tip, index) => (
+              <li key={index}>{tip}</li>
+            ))}
+          </ul>
+        </aside>
+      </div>
+    </section>
+  );
+}
+
+
+
+
