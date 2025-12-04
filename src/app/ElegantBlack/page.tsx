@@ -123,6 +123,15 @@ export default function ElegantBlackTemplate() {
         
         {/* When & Where Section */}
         <WhenWhereSection />
+        
+        {/* Dress Code Section */}
+        <DressCodeSection />
+        
+        {/* Our Moments Section */}
+        <OurMomentsSection />
+        
+        {/* RSVP Section */}
+        <RSVPSection />
       </section>
     </div>
   );
@@ -294,7 +303,7 @@ function OurLoveJourneySection() {
 // Counting Down Section Component
 function CountingDownSection() {
   return (
-    <section className="relative w-full min-h-[600px] md:min-h-[500px] lg:h-[537px] bg-black px-4 py-8 md:py-12 md:px-8 lg:px-0 lg:py-0">
+    <section className="relative w-full min-h-[600px] md:min-h-[500px] lg:h-[537px] bg-black px-4 py-8 pb-20 md:py-12 md:px-8 lg:px-0 lg:py-0">
       {/* Header */}
       <div className="flex flex-col w-full lg:w-[840px] h-auto lg:h-[131px] items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 md:top-[30px] lg:top-[30px] left-1/2 md:left-[calc(50%-420px)] lg:left-[calc(50%-420px)] -translate-x-1/2 md:translate-x-0 lg:translate-x-0 mb-8 md:mb-0 lg:mb-0">
         <p className="relative w-full font-times font-normal text-4xl lg:text-5xl text-center tracking-[-0.82px] lg:tracking-[-0.96px] leading-[normal]">
@@ -410,29 +419,29 @@ function CountingDownSection() {
 // When & Where Section Component
 function WhenWhereSection() {
   return (
-    <section className="relative w-full min-h-[1800px] md:min-h-[900px] lg:h-[1024px] bg-[#ecedec] px-4 py-12 md:px-8 md:py-12 lg:px-0 lg:py-0 mt-8 md:mt-0">
+    <section className="relative w-full min-h-[1800px] md:min-h-[1100px] lg:h-[1024px] bg-[#ecedec] px-4 py-12 md:px-0 md:py-0 lg:px-0 lg:py-0 md:mt-0 lg:mt-0">
       {/* Header */}
-      <div className="flex flex-col w-full md:w-[320px] lg:w-[382px] h-auto lg:h-28 items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 md:top-[80px] lg:top-[140px] left-1/2 md:left-[calc(50%-160px)] lg:left-[calc(50%-191px)] -translate-x-1/2 md:translate-x-0 lg:translate-x-0 mb-8 md:mb-0 lg:mb-0">
+      <div className="flex flex-col w-full md:w-[382px] lg:w-[563px] h-auto lg:h-[132px] items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 md:top-10 lg:top-[140px] left-1/2 -translate-x-1/2 mb-12 md:mb-0 lg:mb-0">
         <p className="relative w-fit font-times font-normal text-4xl md:text-4xl lg:text-5xl text-center tracking-[-0.82px] md:tracking-[-0.82px] lg:tracking-[-0.96px] leading-[normal] whitespace-nowrap">
           <span className="text-black tracking-[-0.46px]">When &amp;</span>
           <span className="text-white tracking-[-0.46px]">&nbsp;</span>
           <span className="text-black tracking-[-0.46px]">Where</span>
         </p>
 
-        <p className="relative w-full md:w-[320px] lg:w-[382px] font-times font-normal text-black text-lg md:text-xl lg:text-2xl text-center tracking-[-0.36px] md:tracking-[-0.40px] lg:tracking-[-0.48px] leading-[normal]">
+        <p className="relative w-full font-times font-normal text-black text-lg md:text-xl lg:text-2xl text-center tracking-[-0.36px] md:tracking-[-0.40px] lg:tracking-[-0.48px] leading-[normal] whitespace-nowrap mt-4">
           Join us in celebrating our elegant union
         </p>
       </div>
 
       {/* Holy Matrimony Section */}
-      <div className="relative md:absolute lg:absolute md:top-[220px] lg:top-[292px] md:left-[40px] lg:left-[50px] w-full md:w-[580px] lg:w-[695px] h-auto lg:h-[261px] mb-12 md:mb-0 lg:mb-0">
+      <div className="relative md:absolute lg:absolute md:top-[180px] lg:top-[292px] md:left-[50px] lg:left-[50px] w-full md:w-[320px] lg:w-[695px] h-auto lg:h-[261px] mb-12 md:mb-0 lg:mb-0">
         {/* Content Card */}
-        <div className="flex flex-col w-full md:w-[320px] lg:w-[382px] h-auto lg:h-[209px] items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 left-0 mx-auto md:mx-0 lg:mx-0">
-          <div className="relative w-fit font-times font-normal text-black text-2xl md:text-[28px] lg:text-[32px] text-center tracking-[-0.48px] md:tracking-[-0.56px] lg:tracking-[-0.64px] leading-[normal] whitespace-nowrap">
+        <div className="flex flex-col w-full md:w-[280px] lg:w-[382px] h-auto lg:h-[209px] items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 left-0 mx-auto md:mx-0 lg:mx-0">
+          <div className="relative w-fit font-times font-normal text-black text-2xl md:text-[26px] lg:text-[32px] text-center tracking-[-0.48px] md:tracking-[-0.52px] lg:tracking-[-0.64px] leading-[normal] whitespace-nowrap">
             Holy Matrimony
           </div>
 
-          <div className="relative w-[94px] h-[3px] bg-black rounded-[50px]" />
+          <div className="relative w-[94px] md:w-[80px] lg:w-[94px] h-[3px] bg-black rounded-[50px]" />
 
           {/* Event Details */}
           <div className="flex flex-col w-full max-w-[280px] md:max-w-[280px] lg:max-w-[325px] items-start justify-center gap-[11px] mt-6 md:mt-0 lg:mt-0 md:absolute lg:absolute md:top-[74px] lg:top-[88px] md:left-5 lg:left-6">
@@ -475,7 +484,7 @@ function WhenWhereSection() {
 
         {/* Buttons */}
         <div className="flex flex-col gap-4 w-full md:w-auto mt-6 md:mt-0 lg:mt-0">
-          <button className="flex w-full md:w-[260px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[28px] lg:left-[34px] bg-black mx-auto md:mx-0">
+          <button className="flex w-full md:w-[220px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[15px] lg:left-[34px] bg-black mx-auto md:mx-0">
             <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
               <path d="M8 1V15M1 8H15" stroke="white" strokeWidth="2" strokeLinecap="round"/>
             </svg>
@@ -484,7 +493,7 @@ function WhenWhereSection() {
             </div>
           </button>
 
-          <button className="flex w-full md:w-[260px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[318px] lg:left-[382px] border border-solid border-black mx-auto md:mx-0">
+          <button className="flex w-full md:w-[220px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[245px] lg:left-[382px] border border-solid border-black mx-auto md:mx-0">
             <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
               <path d="M8 1.33333C5.42 1.33333 3.33333 3.42 3.33333 6C3.33333 9.5 8 14.6667 8 14.6667C8 14.6667 12.6667 9.5 12.6667 6C12.6667 3.42 10.58 1.33333 8 1.33333ZM8 7.66667C7.08 7.66667 6.33333 6.92 6.33333 6C6.33333 5.08 7.08 4.33333 8 4.33333C8.92 4.33333 9.66667 5.08 9.66667 6C9.66667 6.92 8.92 7.66667 8 7.66667Z" fill="black"/>
             </svg>
@@ -495,7 +504,7 @@ function WhenWhereSection() {
         </div>
 
         {/* Google Maps Embed - Holy Matrimony */}
-        <div className="w-full md:w-[175px] lg:w-[209px] h-[200px] md:h-[175px] lg:h-[209px] mt-6 md:mt-0 lg:mt-0 relative md:absolute lg:absolute md:top-0 lg:top-0 md:left-[362px] lg:left-[434px] mx-auto md:mx-0">
+        <div className="w-full md:w-[150px] lg:w-[209px] h-[200px] md:h-[150px] lg:h-[209px] mt-6 md:mt-0 lg:mt-0 relative md:absolute lg:absolute md:top-[40px] lg:top-0 md:left-[320px] lg:left-[434px] mx-auto md:mx-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.2087634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonas!5e0!3m2!1sen!2sid!4v1234567890"
             width="100%"
@@ -510,10 +519,10 @@ function WhenWhereSection() {
       </div>
 
       {/* Wedding Reception Section */}
-      <div className="relative md:absolute lg:absolute md:top-[520px] lg:top-[648px] md:left-[592px] lg:left-[711px] w-full md:w-[580px] lg:w-[695px] h-auto lg:h-[261px] mb-12 md:mb-0 lg:mb-0">
+      <div className="relative md:absolute lg:absolute md:top-[480px] lg:top-[648px] md:left-[50px] lg:left-[711px] w-full md:w-[320px] lg:w-[695px] h-auto lg:h-[261px] mb-12 md:mb-0 lg:mb-0">
         {/* Content Card */}
-        <div className="flex flex-col w-full md:w-[320px] lg:w-[382px] h-auto lg:h-[209px] items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 left-0 mx-auto md:mx-0 lg:mx-0">
-          <div className="relative w-fit font-times font-normal text-black text-2xl md:text-[28px] lg:text-[32px] text-center tracking-[-0.48px] md:tracking-[-0.56px] lg:tracking-[-0.64px] leading-[normal] whitespace-nowrap">
+        <div className="flex flex-col w-full md:w-[280px] lg:w-[382px] h-auto lg:h-[209px] items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 left-0 mx-auto md:mx-0 lg:mx-0">
+          <div className="relative w-fit font-times font-normal text-black text-2xl md:text-[26px] lg:text-[32px] text-center tracking-[-0.48px] md:tracking-[-0.52px] lg:tracking-[-0.64px] leading-[normal] whitespace-nowrap">
             Wedding Reception
           </div>
 
@@ -560,7 +569,7 @@ function WhenWhereSection() {
 
         {/* Buttons */}
         <div className="flex flex-col gap-4 w-full md:w-auto mt-6 md:mt-0 lg:mt-0">
-          <button className="flex w-full md:w-[260px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[28px] lg:left-[34px] bg-black mx-auto md:mx-0">
+          <button className="flex w-full md:w-[220px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[15px] lg:left-[34px] bg-black mx-auto md:mx-0">
             <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
               <path d="M8 1V15M1 8H15" stroke="white" strokeWidth="2" strokeLinecap="round"/>
             </svg>
@@ -569,7 +578,7 @@ function WhenWhereSection() {
             </div>
           </button>
 
-          <button className="flex w-full md:w-[260px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[318px] lg:left-[382px] border border-solid border-black mx-auto md:mx-0">
+          <button className="flex w-full md:w-[220px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[245px] lg:left-[382px] border border-solid border-black mx-auto md:mx-0">
             <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
               <path d="M8 1.33333C5.42 1.33333 3.33333 3.42 3.33333 6C3.33333 9.5 8 14.6667 8 14.6667C8 14.6667 12.6667 9.5 12.6667 6C12.6667 3.42 10.58 1.33333 8 1.33333ZM8 7.66667C7.08 7.66667 6.33333 6.92 6.33333 6C6.33333 5.08 7.08 4.33333 8 4.33333C8.92 4.33333 9.66667 5.08 9.66667 6C9.66667 6.92 8.92 7.66667 8 7.66667Z" fill="black"/>
             </svg>
@@ -580,7 +589,7 @@ function WhenWhereSection() {
         </div>
 
         {/* Google Maps Embed - Wedding Reception */}
-        <div className="w-full md:w-[175px] lg:w-[209px] h-[200px] md:h-[175px] lg:h-[209px] mt-6 md:mt-0 lg:mt-0 relative md:absolute lg:absolute md:top-0 lg:top-0 md:left-[362px] lg:left-[434px] mx-auto md:mx-0">
+        <div className="w-full md:w-[150px] lg:w-[209px] h-[200px] md:h-[150px] lg:h-[209px] mt-6 md:mt-0 lg:mt-0 relative md:absolute lg:absolute md:top-[40px] lg:top-0 md:left-[320px] lg:left-[434px] mx-auto md:mx-0">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4658049662083!2d106.82493931476888!3d-6.208763995502154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f436b8c94b07%3A0x6ea6d5398b7c82f6!2sPlaza%20Indonesia!5e0!3m2!1sen!2sid!4v1234567890"
             width="100%"
@@ -596,13 +605,13 @@ function WhenWhereSection() {
 
       {/* Decorative Images - Desktop & iPad */}
       <img
-        className="hidden md:block absolute md:top-[190px] lg:top-[243px] md:right-[40px] lg:left-[970px] md:w-[290px] lg:w-[350px] md:h-[288px] lg:h-[348px] object-cover"
+        className="hidden md:block absolute md:top-[180px] lg:top-[243px] md:right-0 lg:left-[970px] md:w-[280px] lg:w-[350px] md:h-[277px] lg:h-[348px] object-cover"
         alt="Decoration 1"
         src="https://c.animaapp.com/8gp6MKWa/img/image-101@2x.png"
       />
 
       <img
-        className="hidden md:block absolute md:top-[490px] lg:top-[627px] md:left-[170px] lg:left-[205px] md:w-[290px] lg:w-[350px] md:h-[288px] lg:h-[348px] object-cover"
+        className="hidden md:block absolute md:top-[480px] lg:top-[627px] md:right-0 lg:left-[205px] md:w-[280px] lg:w-[350px] md:h-[277px] lg:h-[348px] object-cover"
         alt="Decoration 2"
         src="https://c.animaapp.com/8gp6MKWa/img/image-102@2x.png"
       />
@@ -707,6 +716,247 @@ function OurLoveStorySection() {
           alt="Isabella Grace Martinez"
           src="https://c.animaapp.com/EnvIStjZ/img/rectangle-17720.svg"
         />
+      </div>
+    </section>
+  );
+}
+
+// Dress Code Section Component
+function DressCodeSection() {
+  return (
+    <section className="relative w-full min-h-[700px] md:min-h-[600px] lg:h-[573px] bg-[#ecedec] px-4 py-12 md:px-8 md:py-16 lg:px-0 lg:py-0">
+      {/* Header */}
+      <div className="flex flex-col items-center gap-2 p-2.5 mb-8 md:mb-12 lg:absolute lg:top-[94px] lg:left-[529px] lg:w-[382px] lg:h-[75px] lg:p-2.5 lg:mb-0">
+        <div className="relative w-fit font-times font-normal text-black text-4xl md:text-5xl lg:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+          Dress Code
+        </div>
+        <div className="relative w-full lg:w-[382px] font-times font-normal text-black text-xl md:text-2xl lg:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          Coqutte Theme
+        </div>
+      </div>
+
+      {/* Color Boxes Container */}
+      <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-0 items-center justify-center mb-8 md:mb-12 lg:mb-0">
+        {/* Elegant Gold Box */}
+        <div className="relative w-full max-w-[280px] md:w-[243px] lg:w-[243.09px] h-[154px] border-2 border-solid border-black lg:absolute lg:top-[234px] lg:left-[468.91px]">
+          <div className="flex flex-col w-full h-full items-center justify-center gap-2.5 p-2.5">
+            <div className="relative w-[70px] h-[70px] bg-[#d4af37]" />
+            <div className="relative w-[159px] font-georgia font-normal text-black text-2xl text-center tracking-[-0.48px] leading-[normal] flex flex-col justify-end">
+              Elegant Gold
+            </div>
+          </div>
+          <div className="absolute top-[24px] left-[calc(50%-34.5px)] w-[69px] h-[69px] border-2 border-solid border-black" />
+        </div>
+
+        {/* Classic Black Box */}
+        <div className="relative w-full max-w-[280px] md:w-[243px] lg:w-[243.09px] h-[154px] border-2 border-solid border-black lg:absolute lg:top-[234px] lg:left-[728px]">
+          <div className="flex flex-col w-full h-full items-center justify-center gap-2.5 p-2.5">
+            <div className="relative w-[70px] h-[70px] bg-[#12152d]" />
+            <div className="relative w-[159px] font-georgia font-normal text-black text-2xl text-center tracking-[-0.48px] leading-[normal] flex flex-col justify-end">
+              Classic Black
+            </div>
+          </div>
+          <div className="absolute top-[24px] left-[calc(50%-34.5px)] w-[69px] h-[69px] border-2 border-solid border-black" />
+        </div>
+      </div>
+
+      {/* Description Text */}
+      <p className="relative w-full max-w-[616px] mx-auto font-times font-normal text-black text-lg md:text-xl lg:text-2xl text-center tracking-[-0.48px] leading-[normal] lg:absolute lg:top-[407px] lg:left-[412px] lg:w-[616px]">
+        We kindly request our guests to wear Elegant Gold colors and Classic Black
+      </p>
+    </section>
+  );
+}
+
+// Our Moments Section Component
+function OurMomentsSection() {
+  return (
+    <section className="relative w-full min-h-[1400px] md:min-h-[1200px] lg:h-[1118px] bg-black px-4 py-12 md:px-8 md:py-16 lg:px-0 lg:py-0">
+      {/* Top Decorative Image */}
+      <img
+        className="absolute top-0 left-0 w-full h-[115px] object-cover"
+        alt="Download removebg"
+        src="https://c.animaapp.com/Y4gGWDQH/img/download-removebg-preview-1.png"
+      />
+
+      {/* Bottom Gradient Overlay */}
+      <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-[rgba(236,237,236,0.15)] to-transparent pointer-events-none" />
+
+      {/* Header */}
+      <div className="flex flex-col w-full max-w-[669px] h-auto lg:h-28 items-center gap-2.5 p-2.5 mx-auto mb-8 md:mb-12 lg:absolute lg:top-[183px] lg:left-[calc(50%-335px)] lg:mb-0">
+        <p className="relative w-full font-times font-normal text-4xl md:text-5xl lg:text-5xl text-center tracking-[-0.96px] leading-[normal]">
+          <span className="text-white tracking-[-0.46px]">Our</span>
+          <span className="text-[#bb2245] tracking-[-0.46px]">&nbsp;</span>
+          <span className="text-white tracking-[-0.46px]">Moments</span>
+        </p>
+        <p className="relative w-full font-times font-normal text-[#d1d1d1] text-xl md:text-2xl lg:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          A glimpse of our elegant love story
+        </p>
+      </div>
+
+      {/* Photo Grid - Left Side */}
+      <div className="flex flex-wrap w-full max-w-[436px] items-start gap-[13px] mx-auto mb-8 md:mb-12 lg:absolute lg:top-[calc(50%-250px)] lg:left-[150px] lg:mx-0 lg:mb-0">
+        <img
+          className="w-[calc(50%-6.5px)] md:w-[211px] aspect-square object-cover"
+          alt="Rectangle"
+          src="https://c.animaapp.com/Y4gGWDQH/img/rectangle-17771.svg"
+        />
+        <img
+          className="w-[calc(50%-6.5px)] md:w-[212px] aspect-square object-cover"
+          alt="Rectangle"
+          src="https://c.animaapp.com/Y4gGWDQH/img/rectangle-17772.svg"
+        />
+        <img
+          className="w-[calc(50%-6.5px)] md:w-[211px] aspect-square object-cover"
+          alt="Rectangle"
+          src="https://c.animaapp.com/Y4gGWDQH/img/rectangle-17773.svg"
+        />
+        <img
+          className="w-[calc(50%-6.5px)] md:w-[212px] aspect-square object-cover"
+          alt="Rectangle"
+          src="https://c.animaapp.com/Y4gGWDQH/img/rectangle-17774.svg"
+        />
+        <img
+          className="w-[calc(50%-6.5px)] md:w-[211px] aspect-square object-cover"
+          alt="Rectangle"
+          src="https://c.animaapp.com/Y4gGWDQH/img/rectangle-17775.svg"
+        />
+        <img
+          className="w-[calc(50%-6.5px)] md:w-[212px] aspect-square object-cover"
+          alt="Rectangle"
+          src="https://c.animaapp.com/Y4gGWDQH/img/rectangle-17776.svg"
+        />
+      </div>
+
+      {/* Share Section - Right Side */}
+      <div className="flex flex-col items-center gap-6 md:gap-8 px-4 lg:px-0">
+        <div className="w-full max-w-[534px] mx-auto lg:absolute lg:top-[464px] lg:left-[784px] lg:w-auto">
+          <div className="font-times font-normal text-white text-3xl md:text-5xl lg:text-[64px] text-center tracking-[-1.28px] leading-[normal] whitespace-nowrap mb-6 md:mb-8 lg:mb-0">
+            Share Your Moments
+          </div>
+        </div>
+
+        <p className="w-full max-w-[534px] mx-auto font-times font-normal text-[#d1d1d1] text-2xl md:text-3xl lg:text-[40px] text-center tracking-[-0.80px] leading-[normal] lg:absolute lg:top-[553px] lg:left-[777px] lg:w-[534px]">
+          Tag us in your photos and videos from our special day using
+        </p>
+
+        <div className="inline-flex items-center justify-center gap-2.5 p-2.5 lg:absolute lg:top-[727px] lg:left-[803px]">
+          <div className="relative w-fit font-[Consolas] font-normal text-white text-2xl md:text-3xl lg:text-[40px] tracking-[-0.80px] leading-[normal] whitespace-nowrap">
+            #ElegantWedding2025
+          </div>
+          <img
+            className="relative w-[35px] h-[35px] md:w-[49px] md:h-12 lg:w-[49px] lg:h-12"
+            alt="Copy"
+            src="https://c.animaapp.com/Y4gGWDQH/img/copy-01.svg"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// RSVP Section Component
+function RSVPSection() {
+  return (
+    <section className="relative w-full min-h-[1000px] md:min-h-[900px] lg:h-[600px] bg-gradient-to-b from-[rgba(0,0,0,0.85)] to-[rgba(0,0,0,0.85)] px-4 py-12 md:px-8 md:py-16 lg:px-0 lg:py-0">
+
+      {/* Header */}
+      <div className="relative z-10 flex flex-col w-full max-w-[582px] items-center gap-4 p-2.5 mx-auto mb-8 md:mb-12 lg:mb-16">
+        <div className="relative w-fit font-times font-normal text-white text-4xl md:text-5xl lg:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+          RSVP
+        </div>
+        <p className="relative w-full font-times font-normal text-[#d1d1d1] text-xl md:text-2xl lg:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          Please confirm your attendance to our elegant celebration
+        </p>
+      </div>
+
+      {/* RSVP Form Container */}
+      <div className="relative z-10 w-full max-w-[559px] mx-auto border border-solid border-white shadow-[0px_4px_4px_rgba(0,0,0,0.25)] p-6 md:p-8 lg:p-0 lg:pt-6 lg:pb-6">
+        <div className="relative lg:px-8">
+          {/* Nama Lengkap Label */}
+          <div className="mb-2">
+            <label className="font-times font-normal text-white text-base tracking-[-0.32px] leading-[normal]">
+              Nama Lengkap
+            </label>
+          </div>
+
+          {/* Nama Lengkap Input */}
+          <input
+            type="text"
+            placeholder="Alif & partner"
+            className="w-full p-2.5 mb-6 border border-solid border-white bg-transparent text-white font-times text-xl tracking-[-0.40px] leading-[normal] placeholder:text-white h-[38px] focus:outline-none focus:ring-1 focus:ring-white"
+          />
+
+          {/* Konfirmasi Kehadiran Label */}
+          <div className="mb-2">
+            <label className="font-times font-normal text-white text-base tracking-[-0.32px] leading-[normal]">
+              Konfirmasi Kehadiran
+            </label>
+          </div>
+
+          {/* Radio Buttons - Hadir & Tidak Hadir */}
+          <div className="flex gap-6 mb-6">
+            <label className="flex items-center gap-2.5 cursor-pointer">
+              <input type="radio" name="attendance" value="hadir" className="sr-only peer" defaultChecked />
+              <div className="w-4 h-4 border-[1.5px] border-white rounded-full relative peer-checked:after:content-[''] peer-checked:after:absolute peer-checked:after:top-1/2 peer-checked:after:left-1/2 peer-checked:after:-translate-x-1/2 peer-checked:after:-translate-y-1/2 peer-checked:after:w-2 peer-checked:after:h-2 peer-checked:after:bg-white peer-checked:after:rounded-full"></div>
+              <span className="font-times font-normal text-white text-base tracking-[-0.32px] leading-[normal]">
+                Hadir
+              </span>
+            </label>
+
+            <label className="flex items-center gap-2.5 cursor-pointer">
+              <input type="radio" name="attendance" value="tidak-hadir" className="sr-only peer" />
+              <div className="w-4 h-4 border-[1.5px] border-white rounded-full relative peer-checked:after:content-[''] peer-checked:after:absolute peer-checked:after:top-1/2 peer-checked:after:left-1/2 peer-checked:after:-translate-x-1/2 peer-checked:after:-translate-y-1/2 peer-checked:after:w-2 peer-checked:after:h-2 peer-checked:after:bg-white peer-checked:after:rounded-full"></div>
+              <span className="font-times font-normal text-white text-base tracking-[-0.32px] leading-[normal]">
+                Tidak Hadir
+              </span>
+            </label>
+          </div>
+
+          {/* Jumlah Tamu Label */}
+          <div className="mb-2">
+            <label className="font-times font-normal text-white text-base tracking-[-0.32px] leading-[normal]">
+              Jumlah tamu
+            </label>
+          </div>
+
+          {/* Jumlah Tamu Dropdown */}
+          <div className="relative mb-6">
+            <select className="w-full px-2.5 py-1.5 border border-solid border-white bg-transparent text-white font-georgia text-base tracking-[-0.32px] leading-[normal] appearance-none h-[38px] focus:outline-none focus:ring-1 focus:ring-white cursor-pointer flex items-center">
+              <option value="1" className="bg-black">1 orang</option>
+              <option value="2" className="bg-black">2 orang</option>
+              <option value="3" className="bg-black">3 orang</option>
+              <option value="4" className="bg-black">4 orang</option>
+              <option value="5" className="bg-black">5 orang</option>
+            </select>
+            <svg className="absolute top-1/2 -translate-y-1/2 right-2.5 w-[18px] h-2.5 pointer-events-none" viewBox="0 0 18 10" fill="white">
+              <path d="M1 1L9 9L17 1" stroke="white" strokeWidth="2" fill="none"/>
+            </svg>
+          </div>
+
+          {/* Pesan Label */}
+          <div className="mb-2">
+            <label className="font-times font-normal text-white text-base tracking-[-0.32px] leading-[normal]">
+              Pesan untuk Mempelai (Opsional)
+            </label>
+          </div>
+
+          {/* Pesan Textarea */}
+          <textarea
+            placeholder="Tulis Pesan anda..."
+            className="w-full p-2.5 mb-6 border border-solid border-white bg-transparent text-white font-times text-xl tracking-[-0.40px] leading-[normal] placeholder:text-white h-[115px] resize-none focus:outline-none focus:ring-1 focus:ring-white"
+          />
+
+          {/* Submit Button */}
+          <button className="w-full flex items-center justify-center gap-2.5 p-2.5 bg-white hover:bg-gray-100 transition-colors h-[38px]">
+            <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+              <path d="M14.6667 1.33337L7.33337 8.66671M14.6667 1.33337L10 14.6667L7.33337 8.66671M14.6667 1.33337L1.33337 6.00004L7.33337 8.66671" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span className="font-times font-normal text-black text-base tracking-[-0.32px] leading-[normal]">
+              Kirim RSVP
+            </span>
+          </button>
+        </div>
       </div>
     </section>
   );
