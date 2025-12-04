@@ -120,6 +120,9 @@ export default function ElegantBlackTemplate() {
         
         {/* Counting Down Section */}
         <CountingDownSection />
+        
+        {/* When & Where Section */}
+        <WhenWhereSection />
       </section>
     </div>
   );
@@ -399,6 +402,209 @@ function CountingDownSection() {
         className="hidden md:block absolute md:top-[119px] lg:top-[119px] md:right-[50px] lg:left-[810px] md:w-[340px] lg:w-[411px] md:h-[338px] lg:h-[408px] object-cover"
         alt="Elegant decoration"
         src="https://c.animaapp.com/IDVqyAUC/img/mask-group@2x.png"
+      />
+    </section>
+  );
+}
+
+// When & Where Section Component
+function WhenWhereSection() {
+  return (
+    <section className="relative w-full min-h-[1800px] md:min-h-[900px] lg:h-[1024px] bg-[#ecedec] px-4 py-12 md:px-8 md:py-12 lg:px-0 lg:py-0 mt-8 md:mt-0">
+      {/* Header */}
+      <div className="flex flex-col w-full md:w-[320px] lg:w-[382px] h-auto lg:h-28 items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 md:top-[80px] lg:top-[140px] left-1/2 md:left-[calc(50%-160px)] lg:left-[calc(50%-191px)] -translate-x-1/2 md:translate-x-0 lg:translate-x-0 mb-8 md:mb-0 lg:mb-0">
+        <p className="relative w-fit font-times font-normal text-4xl md:text-4xl lg:text-5xl text-center tracking-[-0.82px] md:tracking-[-0.82px] lg:tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+          <span className="text-black tracking-[-0.46px]">When &amp;</span>
+          <span className="text-white tracking-[-0.46px]">&nbsp;</span>
+          <span className="text-black tracking-[-0.46px]">Where</span>
+        </p>
+
+        <p className="relative w-full md:w-[320px] lg:w-[382px] font-times font-normal text-black text-lg md:text-xl lg:text-2xl text-center tracking-[-0.36px] md:tracking-[-0.40px] lg:tracking-[-0.48px] leading-[normal]">
+          Join us in celebrating our elegant union
+        </p>
+      </div>
+
+      {/* Holy Matrimony Section */}
+      <div className="relative md:absolute lg:absolute md:top-[220px] lg:top-[292px] md:left-[40px] lg:left-[50px] w-full md:w-[580px] lg:w-[695px] h-auto lg:h-[261px] mb-12 md:mb-0 lg:mb-0">
+        {/* Content Card */}
+        <div className="flex flex-col w-full md:w-[320px] lg:w-[382px] h-auto lg:h-[209px] items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 left-0 mx-auto md:mx-0 lg:mx-0">
+          <div className="relative w-fit font-times font-normal text-black text-2xl md:text-[28px] lg:text-[32px] text-center tracking-[-0.48px] md:tracking-[-0.56px] lg:tracking-[-0.64px] leading-[normal] whitespace-nowrap">
+            Holy Matrimony
+          </div>
+
+          <div className="relative w-[94px] h-[3px] bg-black rounded-[50px]" />
+
+          {/* Event Details */}
+          <div className="flex flex-col w-full max-w-[280px] md:max-w-[280px] lg:max-w-[325px] items-start justify-center gap-[11px] mt-6 md:mt-0 lg:mt-0 md:absolute lg:absolute md:top-[74px] lg:top-[88px] md:left-5 lg:left-6">
+            <div className="inline-flex h-[27px] items-center justify-start gap-2.5 p-2.5 relative w-full">
+              <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 16 16" fill="none">
+                <path d="M12.6667 2.66667H12V1.33333H10.6667V2.66667H5.33333V1.33333H4V2.66667H3.33333C2.59333 2.66667 2.00667 3.26667 2.00667 4L2 13.3333C2 14.0667 2.59333 14.6667 3.33333 14.6667H12.6667C13.4 14.6667 14 14.0667 14 13.3333V4C14 3.26667 13.4 2.66667 12.6667 2.66667ZM12.6667 13.3333H3.33333V6.66667H12.6667V13.3333Z" fill="black"/>
+              </svg>
+              <div className="relative w-fit font-georgia font-normal text-black text-sm md:text-sm lg:text-base text-center tracking-[-0.28px] md:tracking-[-0.28px] lg:tracking-[-0.32px] leading-[normal]">
+                Saturday, March 15, 2025
+              </div>
+            </div>
+
+            <div className="inline-flex h-[27px] items-center justify-start gap-2.5 p-2.5 relative w-full">
+              <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 16 16" fill="none">
+                <path d="M7.99335 1.33333C4.31335 1.33333 1.33335 4.32 1.33335 8C1.33335 11.68 4.31335 14.6667 7.99335 14.6667C11.68 14.6667 14.6667 11.68 14.6667 8C14.6667 4.32 11.68 1.33333 7.99335 1.33333ZM8.00002 13.3333C5.06002 13.3333 2.66669 10.94 2.66669 8C2.66669 5.06 5.06002 2.66667 8.00002 2.66667C10.94 2.66667 13.3334 5.06 13.3334 8C13.3334 10.94 10.94 13.3333 8.00002 13.3333Z" fill="black"/>
+                <path d="M8.33335 4.66667H7.33335V8.66667L10.8334 10.7333L11.3334 9.94667L8.33335 8.16667V4.66667Z" fill="black"/>
+              </svg>
+              <div className="relative w-fit font-georgia font-normal text-black text-sm md:text-sm lg:text-base text-center tracking-[-0.28px] md:tracking-[-0.28px] lg:tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+                08:00 AM
+              </div>
+            </div>
+
+            <div className="inline-flex h-[27px] items-center justify-start gap-2.5 p-2.5 relative w-full">
+              <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 16 16" fill="none">
+                <path d="M8 1.33333C5.42 1.33333 3.33333 3.42 3.33333 6C3.33333 9.5 8 14.6667 8 14.6667C8 14.6667 12.6667 9.5 12.6667 6C12.6667 3.42 10.58 1.33333 8 1.33333ZM8 7.66667C7.08 7.66667 6.33333 6.92 6.33333 6C6.33333 5.08 7.08 4.33333 8 4.33333C8.92 4.33333 9.66667 5.08 9.66667 6C9.66667 6.92 8.92 7.66667 8 7.66667Z" fill="black"/>
+              </svg>
+              <div className="relative w-fit font-georgia font-normal text-black text-sm md:text-sm lg:text-base text-center tracking-[-0.28px] md:tracking-[-0.28px] lg:tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+                Masjid Al-Barokah
+              </div>
+            </div>
+          </div>
+
+          {/* Address */}
+          <div className="flex w-full max-w-[280px] md:max-w-[280px] lg:max-w-[324px] h-auto items-center gap-2.5 p-2.5 mt-4 md:mt-0 lg:mt-0 md:absolute lg:absolute md:top-[160px] lg:top-[189px] md:left-[48px] lg:left-[58px]">
+            <p className="relative w-full font-georgia font-normal text-black text-sm md:text-sm lg:text-base tracking-[-0.28px] md:tracking-[-0.28px] lg:tracking-[-0.32px] leading-[normal]">
+              Jl. Kebahagiaan No. 123, Jakarta Selatan
+            </p>
+          </div>
+        </div>
+
+        {/* Buttons */}
+        <div className="flex flex-col gap-4 w-full md:w-auto mt-6 md:mt-0 lg:mt-0">
+          <button className="flex w-full md:w-[260px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[28px] lg:left-[34px] bg-black mx-auto md:mx-0">
+            <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+              <path d="M8 1V15M1 8H15" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+            <div className="relative w-fit font-times font-bold text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+              Add to Calendar
+            </div>
+          </button>
+
+          <button className="flex w-full md:w-[260px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[318px] lg:left-[382px] border border-solid border-black mx-auto md:mx-0">
+            <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+              <path d="M8 1.33333C5.42 1.33333 3.33333 3.42 3.33333 6C3.33333 9.5 8 14.6667 8 14.6667C8 14.6667 12.6667 9.5 12.6667 6C12.6667 3.42 10.58 1.33333 8 1.33333ZM8 7.66667C7.08 7.66667 6.33333 6.92 6.33333 6C6.33333 5.08 7.08 4.33333 8 4.33333C8.92 4.33333 9.66667 5.08 9.66667 6C9.66667 6.92 8.92 7.66667 8 7.66667Z" fill="black"/>
+            </svg>
+            <div className="relative w-fit font-times font-bold text-black text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+              View on Maps
+            </div>
+          </button>
+        </div>
+
+        {/* Google Maps Embed - Holy Matrimony */}
+        <div className="w-full md:w-[175px] lg:w-[209px] h-[200px] md:h-[175px] lg:h-[209px] mt-6 md:mt-0 lg:mt-0 relative md:absolute lg:absolute md:top-0 lg:top-0 md:left-[362px] lg:left-[434px] mx-auto md:mx-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.2087634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonas!5e0!3m2!1sen!2sid!4v1234567890"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded"
+          />
+        </div>
+      </div>
+
+      {/* Wedding Reception Section */}
+      <div className="relative md:absolute lg:absolute md:top-[520px] lg:top-[648px] md:left-[592px] lg:left-[711px] w-full md:w-[580px] lg:w-[695px] h-auto lg:h-[261px] mb-12 md:mb-0 lg:mb-0">
+        {/* Content Card */}
+        <div className="flex flex-col w-full md:w-[320px] lg:w-[382px] h-auto lg:h-[209px] items-center gap-2.5 p-2.5 relative md:absolute lg:absolute top-0 left-0 mx-auto md:mx-0 lg:mx-0">
+          <div className="relative w-fit font-times font-normal text-black text-2xl md:text-[28px] lg:text-[32px] text-center tracking-[-0.48px] md:tracking-[-0.56px] lg:tracking-[-0.64px] leading-[normal] whitespace-nowrap">
+            Wedding Reception
+          </div>
+
+          <div className="relative w-[94px] h-[3px] bg-black rounded-[50px]" />
+
+          {/* Event Details */}
+          <div className="flex flex-col w-full max-w-[280px] md:max-w-[280px] lg:max-w-[325px] items-start justify-center gap-[11px] mt-6 md:mt-0 lg:mt-0 md:absolute lg:absolute md:top-[74px] lg:top-[88px] md:left-5 lg:left-6">
+            <div className="inline-flex h-[27px] items-center justify-start gap-2.5 p-2.5 relative w-full">
+              <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 16 16" fill="none">
+                <path d="M12.6667 2.66667H12V1.33333H10.6667V2.66667H5.33333V1.33333H4V2.66667H3.33333C2.59333 2.66667 2.00667 3.26667 2.00667 4L2 13.3333C2 14.0667 2.59333 14.6667 3.33333 14.6667H12.6667C13.4 14.6667 14 14.0667 14 13.3333V4C14 3.26667 13.4 2.66667 12.6667 2.66667ZM12.6667 13.3333H3.33333V6.66667H12.6667V13.3333Z" fill="black"/>
+              </svg>
+              <div className="relative w-fit font-georgia font-normal text-black text-sm md:text-sm lg:text-base text-center tracking-[-0.28px] md:tracking-[-0.28px] lg:tracking-[-0.32px] leading-[normal]">
+                Saturday, March 15, 2025
+              </div>
+            </div>
+
+            <div className="inline-flex h-[27px] items-center justify-start gap-2.5 p-2.5 relative w-full">
+              <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 16 16" fill="none">
+                <path d="M7.99335 1.33333C4.31335 1.33333 1.33335 4.32 1.33335 8C1.33335 11.68 4.31335 14.6667 7.99335 14.6667C11.68 14.6667 14.6667 11.68 14.6667 8C14.6667 4.32 11.68 1.33333 7.99335 1.33333ZM8.00002 13.3333C5.06002 13.3333 2.66669 10.94 2.66669 8C2.66669 5.06 5.06002 2.66667 8.00002 2.66667C10.94 2.66667 13.3334 5.06 13.3334 8C13.3334 10.94 10.94 13.3333 8.00002 13.3333Z" fill="black"/>
+                <path d="M8.33335 4.66667H7.33335V8.66667L10.8334 10.7333L11.3334 9.94667L8.33335 8.16667V4.66667Z" fill="black"/>
+              </svg>
+              <div className="relative w-fit font-georgia font-normal text-black text-sm md:text-sm lg:text-base text-center tracking-[-0.28px] md:tracking-[-0.28px] lg:tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+                07:00 PM
+              </div>
+            </div>
+
+            <div className="inline-flex h-[27px] items-center justify-start gap-2.5 p-2.5 relative w-full">
+              <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 16 16" fill="none">
+                <path d="M8 1.33333C5.42 1.33333 3.33333 3.42 3.33333 6C3.33333 9.5 8 14.6667 8 14.6667C8 14.6667 12.6667 9.5 12.6667 6C12.6667 3.42 10.58 1.33333 8 1.33333ZM8 7.66667C7.08 7.66667 6.33333 6.92 6.33333 6C6.33333 5.08 7.08 4.33333 8 4.33333C8.92 4.33333 9.66667 5.08 9.66667 6C9.66667 6.92 8.92 7.66667 8 7.66667Z" fill="black"/>
+              </svg>
+              <div className="relative w-fit font-georgia font-normal text-black text-sm md:text-sm lg:text-base text-center tracking-[-0.28px] md:tracking-[-0.28px] lg:tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+                The Royal Ballroom
+              </div>
+            </div>
+          </div>
+
+          {/* Address */}
+          <div className="flex w-full max-w-[280px] md:max-w-[280px] lg:max-w-[324px] h-auto items-center gap-2.5 p-2.5 mt-4 md:mt-0 lg:mt-0 md:absolute lg:absolute md:top-[160px] lg:top-[189px] md:left-[48px] lg:left-[58px]">
+            <p className="relative w-full font-georgia font-normal text-black text-sm md:text-sm lg:text-base tracking-[-0.28px] md:tracking-[-0.28px] lg:tracking-[-0.32px] leading-[normal]">
+              Jl. Cinta Sejati No. 456, Jakarta Selatan
+            </p>
+          </div>
+        </div>
+
+        {/* Buttons */}
+        <div className="flex flex-col gap-4 w-full md:w-auto mt-6 md:mt-0 lg:mt-0">
+          <button className="flex w-full md:w-[260px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[28px] lg:left-[34px] bg-black mx-auto md:mx-0">
+            <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+              <path d="M8 1V15M1 8H15" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+            <div className="relative w-fit font-times font-bold text-white text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+              Add to Calendar
+            </div>
+          </button>
+
+          <button className="flex w-full md:w-[260px] lg:w-[313px] h-[31px] items-center justify-center gap-2.5 p-2.5 relative md:absolute lg:absolute md:top-[195px] lg:top-[230px] md:left-[318px] lg:left-[382px] border border-solid border-black mx-auto md:mx-0">
+            <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+              <path d="M8 1.33333C5.42 1.33333 3.33333 3.42 3.33333 6C3.33333 9.5 8 14.6667 8 14.6667C8 14.6667 12.6667 9.5 12.6667 6C12.6667 3.42 10.58 1.33333 8 1.33333ZM8 7.66667C7.08 7.66667 6.33333 6.92 6.33333 6C6.33333 5.08 7.08 4.33333 8 4.33333C8.92 4.33333 9.66667 5.08 9.66667 6C9.66667 6.92 8.92 7.66667 8 7.66667Z" fill="black"/>
+            </svg>
+            <div className="relative w-fit font-times font-bold text-black text-base tracking-[-0.32px] leading-[normal] whitespace-nowrap">
+              View on Maps
+            </div>
+          </button>
+        </div>
+
+        {/* Google Maps Embed - Wedding Reception */}
+        <div className="w-full md:w-[175px] lg:w-[209px] h-[200px] md:h-[175px] lg:h-[209px] mt-6 md:mt-0 lg:mt-0 relative md:absolute lg:absolute md:top-0 lg:top-0 md:left-[362px] lg:left-[434px] mx-auto md:mx-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4658049662083!2d106.82493931476888!3d-6.208763995502154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f436b8c94b07%3A0x6ea6d5398b7c82f6!2sPlaza%20Indonesia!5e0!3m2!1sen!2sid!4v1234567890"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded"
+          />
+        </div>
+      </div>
+
+      {/* Decorative Images - Desktop & iPad */}
+      <img
+        className="hidden md:block absolute md:top-[190px] lg:top-[243px] md:right-[40px] lg:left-[970px] md:w-[290px] lg:w-[350px] md:h-[288px] lg:h-[348px] object-cover"
+        alt="Decoration 1"
+        src="https://c.animaapp.com/8gp6MKWa/img/image-101@2x.png"
+      />
+
+      <img
+        className="hidden md:block absolute md:top-[490px] lg:top-[627px] md:left-[170px] lg:left-[205px] md:w-[290px] lg:w-[350px] md:h-[288px] lg:h-[348px] object-cover"
+        alt="Decoration 2"
+        src="https://c.animaapp.com/8gp6MKWa/img/image-102@2x.png"
       />
     </section>
   );
