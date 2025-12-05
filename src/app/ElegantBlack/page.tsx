@@ -141,6 +141,9 @@ export default function ElegantBlackTemplate() {
         
         {/* QR Code Section */}
         <QRCodeSection />
+        
+        {/* Thank You Section */}
+        <ThankYouSection />
       </section>
     </div>
   );
@@ -991,6 +994,65 @@ function RSVPSection() {
           </button>
         </div>
       </div>
+
+      {/* Masked Photo - Positioned between RSVP and Wishes */}
+      
+      {/* Mobile Version - Right aligned like iPad */}
+      <div className="block md:hidden absolute bottom-0 right-[20px] w-[240px] h-[238px] translate-y-1/2 z-20">
+        <img
+          src="/assets/elegant/mempelai22.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/mask22.svg)',
+            maskSize: 'cover',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/mask22.svg)',
+            WebkitMaskSize: 'cover',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
+
+      {/* iPad Version - Right aligned */}
+      <div className="hidden md:block lg:hidden absolute bottom-0 right-[40px] w-[280px] h-[278px] translate-y-1/2 z-20">
+        <img
+          src="/assets/elegant/mempelai22.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/mask22.svg)',
+            maskSize: 'cover',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/mask22.svg)',
+            WebkitMaskSize: 'cover',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
+
+      {/* Desktop Version - Right aligned */}
+      <div className="hidden lg:block absolute bottom-0 right-[80px] xl:right-[120px] w-[340px] h-[338px] translate-y-1/2 z-20">
+        <img
+          src="/assets/elegant/mempelai22.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/mask22.svg)',
+            maskSize: 'cover',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/mask22.svg)',
+            WebkitMaskSize: 'cover',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
     </section>
   );
 }
@@ -1048,7 +1110,7 @@ function WishesSection() {
   };
 
   return (
-    <section className="relative w-full min-h-[900px] md:min-h-[1100px] lg:h-[801px] bg-gradient-to-b from-[rgba(0,0,0,0.85)] to-[rgba(20,20,20,0.5)] px-4 py-12 md:px-8 md:py-16 lg:px-0 lg:py-0">
+    <section className="relative w-full min-h-[1100px] md:min-h-[1100px] lg:h-[801px] bg-gradient-to-b from-[rgba(0,0,0,0.85)] to-[rgba(20,20,20,0.5)] px-4 py-12 md:px-8 md:py-16 lg:px-0 lg:py-0 pt-[140px] md:pt-[160px] lg:pt-[200px] pb-[150px] md:pb-[120px] lg:pb-0 overflow-visible">
       {/* Header */}
       <div className="w-full max-w-[794px] mx-auto items-center pt-12 lg:pt-0 lg:absolute lg:top-[172px] lg:left-[calc(50%-397px)] flex flex-col gap-2.5 p-2.5 mb-12 lg:mb-0">
         <h1 className="relative w-fit font-times font-normal text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal]">
@@ -1150,6 +1212,65 @@ function WishesSection() {
           </div>
         </div>
       </div>
+
+      {/* Masked Photo 2 - Positioned between Wishes and Gift */}
+      
+      {/* Mobile Version - Left aligned */}
+      <div className="block md:hidden absolute bottom-[-60px] left-[-30px] w-[220px] h-[220px] z-20">
+        <img
+          src="/assets/elegant/mempelai22.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/mask33.svg)',
+            maskSize: 'contain',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/mask33.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
+
+      {/* iPad Version - Left aligned */}
+      <div className="hidden md:block lg:hidden absolute bottom-0 left-[-20px] w-[300px] h-[300px] translate-y-1/2 z-20">
+        <img
+          src="/assets/elegant/mempelai22.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/mask33.svg)',
+            maskSize: 'contain',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/mask33.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
+
+      {/* Desktop Version - Left aligned */}
+      <div className="hidden lg:block absolute bottom-0 left-[20px] xl:left-[40px] w-[360px] h-[360px] translate-y-1/2 z-20">
+        <img
+          src="/assets/elegant/mempelai22.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/mask33.svg)',
+            maskSize: 'contain',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/mask33.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
     </section>
   );
 }
@@ -1204,7 +1325,7 @@ function WeddingGiftSection() {
   };
 
   return (
-    <section className="relative w-full min-h-[700px] md:min-h-[700px] lg:h-[652px] bg-gradient-to-b from-[rgba(20,20,20,0.5)] to-[rgba(40,40,40,0.6)] px-4 py-12 md:px-8 md:py-16 lg:px-0 lg:py-0 overflow-hidden">
+    <section className="relative w-full min-h-[900px] md:min-h-[700px] lg:h-[652px] bg-gradient-to-b from-[rgba(20,20,20,0.5)] to-[rgba(40,40,40,0.6)] px-4 py-12 md:px-8 md:py-16 lg:px-0 lg:py-0 pt-[60px] md:pt-[160px] lg:pt-[200px] pb-[80px] md:pb-[180px] lg:pb-0 overflow-visible">
       {/* Background Decorative Image */}
       <img
         className="absolute top-0 left-0 w-full h-full object-cover opacity-10"
@@ -1347,6 +1468,65 @@ function WeddingGiftSection() {
           </p>
         </div>
       </div>
+
+      {/* Masked Photo 3 - Positioned between Gift and QR Code */}
+      
+      {/* Mobile Version - Right aligned */}
+      <div className="block md:hidden absolute bottom-[-50px] right-[-20px] w-[220px] h-[220px] z-20">
+        <img
+          src="/assets/elegant/mempelai22.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/mask44.svg)',
+            maskSize: 'contain',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/mask44.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
+
+      {/* iPad Version - Right aligned */}
+      <div className="hidden md:block lg:hidden absolute bottom-[-80px] right-[-10px] w-[300px] h-[300px] z-20">
+        <img
+          src="/assets/elegant/mempelai22.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/mask44.svg)',
+            maskSize: 'contain',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/mask44.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
+
+      {/* Desktop Version - Right aligned */}
+      <div className="hidden lg:block absolute bottom-[-120px] right-[20px] xl:right-[40px] w-[400px] h-[400px] z-20">
+        <img
+          src="/assets/elegant/mempelai22.png"
+          alt="Couple"
+          className="w-full h-full object-cover"
+          style={{
+            maskImage: 'url(/assets/elegant/mask44.svg)',
+            maskSize: 'contain',
+            maskPosition: 'center',
+            maskRepeat: 'no-repeat',
+            WebkitMaskImage: 'url(/assets/elegant/mask44.svg)',
+            WebkitMaskSize: 'contain',
+            WebkitMaskPosition: 'center',
+            WebkitMaskRepeat: 'no-repeat'
+          }}
+        />
+      </div>
     </section>
   );
 }
@@ -1364,7 +1544,7 @@ function QRCodeSection() {
   ];
 
   return (
-    <section className="relative w-full min-h-[769px] py-16 px-4 bg-gradient-to-b from-[rgba(40,40,40,0.6)] to-[rgba(50,50,50,0.65)]">
+    <section className="relative w-full min-h-[769px] py-16 px-4 bg-gradient-to-b from-[rgba(40,40,40,0.6)] to-[rgba(50,50,50,0.65)] pt-[80px] md:pt-[120px] lg:pt-[150px]">
       {/* Header */}
       <header className="w-full max-w-[630px] mx-auto flex flex-col items-center gap-2.5 mb-12">
         <h1 className="font-times font-normal text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
@@ -1436,6 +1616,99 @@ function QRCodeSection() {
           </ul>
         </aside>
       </div>
+    </section>
+  );
+}
+
+function ThankYouSection() {
+  const socialLinks = [
+    {
+      id: "instagram",
+      href: "https://instagram.com",
+      icon: "https://c.animaapp.com/ZE5PWmKE/img/instagram.svg",
+      alt: "Instagram",
+    },
+    {
+      id: "whatsapp",
+      href: "https://whatsapp.com",
+      icon: "https://c.animaapp.com/ZE5PWmKE/img/whatsapp.svg",
+      alt: "Whatsapp",
+    },
+  ];
+
+  return (
+    <section className="relative w-full min-h-[479px] py-16 px-4 overflow-hidden bg-[#ecedec]">
+      {/* Background decorative images */}
+      <img
+        className="absolute top-[calc(50%-100228px)] left-[-4605px] w-[539px] h-[1440px] object-cover hidden lg:block"
+        alt=""
+        src="https://c.animaapp.com/ZE5PWmKE/img/download--3--1.png"
+      />
+
+      <img
+        className="absolute top-0 left-0 w-full h-[115px] object-cover"
+        alt=""
+        src="https://c.animaapp.com/ZE5PWmKE/img/download-removebg-preview-1.png"
+      />
+
+      {/* Header */}
+      <header className="flex flex-col w-full max-w-[557px] mx-auto items-center gap-2.5 px-4 mb-8 mt-8 md:mt-12">
+        <h1 className="font-times font-normal text-black text-4xl md:text-5xl text-center tracking-[-0.96px] leading-[normal] whitespace-nowrap">
+          Thank You
+        </h1>
+
+        <p className="font-times font-normal text-black text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          Your presence and wishes mean the world to us. Thank you for being
+          part of our elegant love story.
+        </p>
+      </header>
+
+      {/* Divider Line */}
+      <div className="w-full max-w-[280px] mx-auto h-px bg-black mb-6" />
+
+      {/* Footer */}
+      <footer className="flex flex-col w-full max-w-[581px] mx-auto items-center justify-center gap-4 px-4">
+        <div className="flex items-center justify-center gap-2.5 flex-wrap">
+          <p className="font-times font-normal text-black text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+            Made with
+          </p>
+
+          <img
+            className="w-[25px] h-[25px]"
+            alt="heart"
+            src="https://c.animaapp.com/ZE5PWmKE/img/linear---like---heart-.svg"
+            role="img"
+            aria-label="love"
+          />
+
+          <p className="font-times font-normal text-black text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+            for our special day
+          </p>
+        </div>
+
+        <p className="font-times font-normal text-black text-lg md:text-2xl text-center tracking-[-0.48px] leading-[normal]">
+          © 2025 Prefere Digital Invitation
+        </p>
+      </footer>
+
+      {/* Social Media Links */}
+      <nav
+        className="flex gap-5 justify-center mt-6"
+        aria-label="Social media links"
+      >
+        {socialLinks.map((social) => (
+          <a
+            key={social.id}
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 transition-opacity hover:opacity-80"
+            aria-label={social.alt}
+          >
+            <img className="w-full h-full" alt={social.alt} src={social.icon} />
+          </a>
+        ))}
+      </nav>
     </section>
   );
 }
