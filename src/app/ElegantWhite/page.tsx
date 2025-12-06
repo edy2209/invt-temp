@@ -192,3 +192,149 @@ function WordsOfLoveSection() {
     </section>
   );
 }
+
+function OurLoveStorySection() {
+  const coupleData = [
+    {
+      name: "Alexander William Thompson",
+      parentLabel: "Putra dari:",
+      parents: "William Thompson & Elizabeth Thompson",
+      instagram: "@alexanderson",
+      instagramIcon: "https://c.animaapp.com/oq9FutZO/img/social-icons.svg",
+      image: "https://c.animaapp.com/oq9FutZO/img/rectangle-17721@2x.png",
+      imageAlt: "Alexander William Thompson",
+    },
+    {
+      name: "Isabella Grace Martinez",
+      parentLabel: "Putri dari:",
+      parents: "Roberto Martinez & Sofia Martinez",
+      instagram: "@princess_bella",
+      instagramIcon: "https://c.animaapp.com/oq9FutZO/img/social-icons-1.svg",
+      image: "https://c.animaapp.com/oq9FutZO/img/rectangle-17720@2x.png",
+      imageAlt: "Isabella Grace Martinez",
+    },
+  ];
+
+  return (
+    <section className="relative w-full min-h-[900px] py-16 px-4 md:px-8 bg-white overflow-hidden">
+      {/* Header */}
+      <header className="flex flex-col w-full max-w-[610px] mx-auto items-center gap-2.5 mb-12 md:mb-16">
+        <h1 className="font-times font-normal text-black text-4xl md:text-5xl lg:text-[64px] text-center tracking-[-0.80px] md:tracking-[-1.28px] leading-[normal]">
+          Our Love Story
+        </h1>
+        <p className="font-times italic text-[#838383] text-lg md:text-xl lg:text-2xl text-center tracking-[-0.40px] md:tracking-[-0.48px] leading-[normal]">
+          Two souls destined to become one
+        </p>
+      </header>
+
+      {/* Couple Profiles Container */}
+      <div className="relative w-full max-w-[1258px] mx-auto">
+        {/* First Person - Groom (Photo Left, Text Right on Desktop) */}
+        <article className="relative mb-12 md:mb-20">
+          {/* Golden Background Gradient - Desktop */}
+          <div
+            className="hidden lg:block absolute top-1/2 -translate-y-1/2 left-0 w-full h-[245px] rounded-[20px] bg-[linear-gradient(90deg,rgba(213,182,88,1)_0%,rgba(255,255,255,0)_100%)]"
+            aria-hidden="true"
+          />
+
+          <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8">
+            {/* Photo */}
+            <div className="w-[280px] h-[280px] md:w-[300px] md:h-[300px] lg:w-[325px] lg:h-[325px] flex-shrink-0">
+              <img
+                className="w-full h-full object-cover rounded-lg lg:rounded-none"
+                alt={coupleData[0].imageAlt}
+                src={coupleData[0].image}
+              />
+            </div>
+
+            {/* Info */}
+            <div className="flex-1 flex flex-col items-center justify-center gap-3 lg:gap-2 lg:mt-[111px] max-w-[547px]">
+              <h2 className="font-times italic text-black text-2xl md:text-3xl lg:text-4xl text-center tracking-[-0.48px] md:tracking-[-0.72px] leading-[normal]">
+                {coupleData[0].name}
+              </h2>
+
+              <p className="font-times font-normal text-black text-xl md:text-2xl lg:text-[32px] text-center tracking-[-0.40px] md:tracking-[-0.64px] leading-[normal]">
+                {coupleData[0].parentLabel}
+              </p>
+
+              <p className="font-times font-normal text-black text-xl md:text-2xl lg:text-[32px] text-center tracking-[-0.40px] md:tracking-[-0.64px] leading-[normal]">
+                {coupleData[0].parents}
+              </p>
+
+              {/* Instagram Button */}
+              <a
+                href={`https://instagram.com/${coupleData[0].instagram.replace("@", "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center justify-center gap-2.5 px-6 py-2.5 bg-white rounded-[10px] border border-gray-200 hover:bg-gray-50 transition-colors"
+                aria-label={`Visit ${coupleData[0].name}'s Instagram profile`}
+              >
+                <img
+                  className="w-[25px] h-[25px]"
+                  alt="Instagram icon"
+                  src={coupleData[0].instagramIcon}
+                />
+                <span className="font-times font-bold text-black text-base tracking-[-0.32px] leading-[normal]">
+                  {coupleData[0].instagram}
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        {/* Second Person - Bride (Photo Right, Text Left on Desktop) */}
+        <article className="relative">
+          {/* Golden Background Gradient - Desktop (Rotated) */}
+          <div
+            className="hidden lg:block absolute top-1/2 -translate-y-1/2 left-0 w-full h-[245px] rounded-[20px] rotate-180 bg-[linear-gradient(90deg,rgba(213,182,88,1)_0%,rgba(255,255,255,0)_100%)]"
+            aria-hidden="true"
+          />
+
+          <div className="relative z-10 flex flex-col lg:flex-row-reverse items-center lg:items-start gap-6 lg:gap-8">
+            {/* Photo */}
+            <div className="w-[280px] h-[280px] md:w-[300px] md:h-[300px] lg:w-[325px] lg:h-[325px] flex-shrink-0">
+              <img
+                className="w-full h-full object-cover rounded-lg lg:rounded-none"
+                alt={coupleData[1].imageAlt}
+                src={coupleData[1].image}
+              />
+            </div>
+
+            {/* Info */}
+            <div className="flex-1 flex flex-col items-center justify-center gap-3 lg:gap-2 lg:mt-[116px] max-w-[547px]">
+              <h2 className="font-times italic text-black text-2xl md:text-3xl lg:text-4xl text-center tracking-[-0.48px] md:tracking-[-0.72px] leading-[normal]">
+                {coupleData[1].name}
+              </h2>
+
+              <p className="font-times font-normal text-black text-xl md:text-2xl lg:text-[32px] text-center tracking-[-0.40px] md:tracking-[-0.64px] leading-[normal]">
+                {coupleData[1].parentLabel}
+              </p>
+
+              <p className="font-times font-normal text-black text-xl md:text-2xl lg:text-[32px] text-center tracking-[-0.40px] md:tracking-[-0.64px] leading-[normal]">
+                {coupleData[1].parents}
+              </p>
+
+              {/* Instagram Button */}
+              <a
+                href={`https://instagram.com/${coupleData[1].instagram.replace("@", "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center justify-center gap-2.5 px-6 py-2.5 bg-white rounded-[10px] border border-gray-200 hover:bg-gray-50 transition-colors"
+                aria-label={`Visit ${coupleData[1].name}'s Instagram profile`}
+              >
+                <img
+                  className="w-[25px] h-[25px]"
+                  alt="Instagram icon"
+                  src={coupleData[1].instagramIcon}
+                />
+                <span className="font-times font-bold text-black text-base tracking-[-0.32px] leading-[normal]">
+                  {coupleData[1].instagram}
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  );
+}
